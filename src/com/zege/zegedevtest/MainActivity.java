@@ -1,5 +1,7 @@
 package com.zege.zegedevtest;
 
+import com.zege.zegedevtest.utils.Constants;
+
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBarActivity;
@@ -14,11 +16,14 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        
+        Constants.initializeFlatUi(this);
+        
         setContentView(R.layout.activity_main);
 
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
-                    .add(R.id.container, new PlaceholderFragment())
+                    .add(R.id.container, new TransactionsHomeFragment())
                     .commit();
         }
     }
@@ -46,9 +51,9 @@ public class MainActivity extends ActionBarActivity {
     /**
      * A placeholder fragment containing a simple view.
      */
-    public static class PlaceholderFragment extends Fragment {
+    public static class TransactionsHomeFragment extends Fragment {
 
-        public PlaceholderFragment() {
+        public TransactionsHomeFragment() {
         }
 
         @Override

@@ -18,12 +18,13 @@ import com.zege.zegedevtest.flatui.views.FlatRadioButton;
 import com.zege.zegedevtest.flatui.views.FlatSeekBar;
 import com.zege.zegedevtest.flatui.views.FlatTextView;
 import com.zege.zegedevtest.flatui.views.FlatToggleButton;
+import com.zege.zegedevtest.utils.Constants;
 
 public class FlatUIRef extends ActionBarActivity {
 
-    private final int APP_THEME = R.array.blood;
-
-    private ArrayList<FlatTextView> flatTextViews = new ArrayList<FlatTextView>();
+	private final int APP_THEME = Constants.APP_THEME;
+			
+	private ArrayList<FlatTextView> flatTextViews = new ArrayList<FlatTextView>();
     private ArrayList<FlatEditText> flatEditTexts = new ArrayList<FlatEditText>();
     private ArrayList<FlatButton> flatButtons = new ArrayList<FlatButton>();
     private ArrayList<FlatCheckBox> flatCheckBoxes = new ArrayList<FlatCheckBox>();
@@ -38,11 +39,7 @@ public class FlatUIRef extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // converts the default values to dp to be compatible with different screen sizes
-        FlatUI.initDefaultValues(this);
-
-        // Default theme should be set before content view is added
-        FlatUI.setDefaultTheme(APP_THEME);
+        Constants.initializeFlatUi(this);
 
         setContentView(R.layout.flat_ui_ref);
 
