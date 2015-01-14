@@ -16,6 +16,23 @@ public final class R {
         public static final int abc_slide_out_bottom=0x7f040004;
         public static final int abc_slide_out_top=0x7f040005;
     }
+    public static final class array {
+        public static final int blood=0x7f0c000d;
+        public static final int blossom=0x7f0c0005;
+        public static final int candy=0x7f0c0004;
+        public static final int custom_theme_1=0x7f0c0000;
+        public static final int custom_theme_2=0x7f0c0001;
+        public static final int dark=0x7f0c000a;
+        public static final int deep=0x7f0c0007;
+        public static final int grape=0x7f0c0006;
+        public static final int grass=0x7f0c0009;
+        public static final int orange=0x7f0c0003;
+        public static final int sand=0x7f0c0002;
+        public static final int sea=0x7f0c000c;
+        public static final int sky=0x7f0c0008;
+        public static final int snow=0x7f0c000b;
+        public static final int themes_array=0x7f0c000e;
+    }
     public static final class attr {
         /**  Custom divider drawable to use for elements in the action bar. 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
@@ -318,6 +335,214 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int expandActivityOverflowButtonDrawable=0x7f010067;
+        /** <p>May be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>flat</code></td><td>0</td><td></td></tr>
+<tr><td><code>box</code></td><td>1</td><td></td></tr>
+<tr><td><code>transparent</code></td><td>2</td><td></td></tr>
+</table>
+         */
+        public static final int fl_autoFieldStyle=0x7f010076;
+        /** <p>May be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>fl_darker</code></td><td>0</td><td></td></tr>
+<tr><td><code>fl_dark</code></td><td>1</td><td></td></tr>
+<tr><td><code>fl_main</code></td><td>2</td><td></td></tr>
+<tr><td><code>fl_light</code></td><td>3</td><td></td></tr>
+</table>
+         */
+        public static final int fl_backgroundColor=0x7f010078;
+        /**  Defines the height of the border bottom of the button 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int fl_blockButtonEffectHeight=0x7f010074;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int fl_borderWidth=0x7f010070;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int fl_cornerRadius=0x7f01006f;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int fl_customBackgroundColor=0x7f010079;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int fl_dotMargin=0x7f010073;
+        /** <p>May be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>fl_flat</code></td><td>0</td><td></td></tr>
+<tr><td><code>fl_box</code></td><td>1</td><td></td></tr>
+<tr><td><code>fl_transparent</code></td><td>2</td><td></td></tr>
+</table>
+         */
+        public static final int fl_fieldStyle=0x7f010075;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int fl_fontExtension=0x7f01006d;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int fl_fontFamily=0x7f01006b;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int fl_fontWeight=0x7f01006c;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int fl_size=0x7f010071;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int fl_space=0x7f01007a;
+        /** <p>May be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>fl_none</code></td><td>0</td><td></td></tr>
+<tr><td><code>fl_dark</code></td><td>1</td><td></td></tr>
+<tr><td><code>fl_light</code></td><td>2</td><td></td></tr>
+</table>
+         */
+        public static final int fl_textAppearance=0x7f01006e;
+        /** <p>May be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>fl_darker</code></td><td>0</td><td></td></tr>
+<tr><td><code>fl_dark</code></td><td>1</td><td></td></tr>
+<tr><td><code>fl_main</code></td><td>2</td><td></td></tr>
+<tr><td><code>fl_light</code></td><td>3</td><td></td></tr>
+</table>
+         */
+        public static final int fl_textColor=0x7f010077;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int fl_theme=0x7f01006a;
+        /** <p>May be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>fl_none</code></td><td>0</td><td></td></tr>
+<tr><td><code>fl_ease</code></td><td>1</td><td></td></tr>
+<tr><td><code>fl_ripple</code></td><td>2</td><td></td></tr>
+</table>
+         */
+        public static final int fl_touchEffect=0x7f010072;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -794,10 +1019,90 @@ containing a value of this type.
         public static final int abc_split_action_bar_is_narrow=0x7f060002;
     }
     public static final class color {
-        public static final int abc_search_url_text_holo=0x7f070003;
+        public static final int abc_search_url_text_holo=0x7f07003b;
         public static final int abc_search_url_text_normal=0x7f070000;
         public static final int abc_search_url_text_pressed=0x7f070002;
         public static final int abc_search_url_text_selected=0x7f070001;
+        public static final int blood_dark=0x7f070038;
+        /**  blood 
+         */
+        public static final int blood_darker=0x7f070037;
+        public static final int blood_light=0x7f07003a;
+        public static final int blood_primary=0x7f070039;
+        public static final int blossom_dark=0x7f070018;
+        /**  blossom 
+         */
+        public static final int blossom_darker=0x7f070017;
+        public static final int blossom_light=0x7f07001a;
+        public static final int blossom_primary=0x7f070019;
+        public static final int candy_dark=0x7f070014;
+        /**  candy 
+         */
+        public static final int candy_darker=0x7f070013;
+        public static final int candy_light=0x7f070016;
+        public static final int candy_primary=0x7f070015;
+        public static final int dark_dark=0x7f07002c;
+        /**  dark 
+         */
+        public static final int dark_darker=0x7f07002b;
+        public static final int dark_light=0x7f07002e;
+        public static final int dark_primary=0x7f07002d;
+        public static final int deep_dark=0x7f070020;
+        /**  deep 
+         */
+        public static final int deep_darker=0x7f07001f;
+        public static final int deep_light=0x7f070022;
+        public static final int deep_primary=0x7f070021;
+        public static final int grape_dark=0x7f07001c;
+        /**  grape 
+         */
+        public static final int grape_darker=0x7f07001b;
+        public static final int grape_light=0x7f07001e;
+        public static final int grape_primary=0x7f07001d;
+        public static final int grass_dark=0x7f070028;
+        /**  grass 
+         */
+        public static final int grass_darker=0x7f070027;
+        public static final int grass_light=0x7f07002a;
+        public static final int grass_primary=0x7f070029;
+        public static final int orange_dark=0x7f070010;
+        /**  orange 
+         */
+        public static final int orange_darker=0x7f07000f;
+        public static final int orange_light=0x7f070012;
+        public static final int orange_primary=0x7f070011;
+        public static final int sand_dark=0x7f07000c;
+        /**  sand 
+         */
+        public static final int sand_darker=0x7f07000b;
+        public static final int sand_light=0x7f07000e;
+        public static final int sand_primary=0x7f07000d;
+        public static final int sea_dark=0x7f070034;
+        /**  sea 
+         */
+        public static final int sea_darker=0x7f070033;
+        public static final int sea_light=0x7f070036;
+        public static final int sea_primary=0x7f070035;
+        public static final int sky_dark=0x7f070024;
+        /**  sky 
+         */
+        public static final int sky_darker=0x7f070023;
+        public static final int sky_light=0x7f070026;
+        public static final int sky_primary=0x7f070025;
+        public static final int snow_dark=0x7f070030;
+        /**  snow 
+         */
+        public static final int snow_darker=0x7f07002f;
+        public static final int snow_light=0x7f070032;
+        public static final int snow_primary=0x7f070031;
+        public static final int theme1_dark_color=0x7f070004;
+        public static final int theme1_darker_color=0x7f070003;
+        public static final int theme1_light_color=0x7f070006;
+        public static final int theme1_primary_color=0x7f070005;
+        public static final int theme2_dark_color=0x7f070008;
+        public static final int theme2_darker_color=0x7f070007;
+        public static final int theme2_light_color=0x7f07000a;
+        public static final int theme2_primary_color=0x7f070009;
     }
     public static final class dimen {
         /**  Default height of an action bar. 
@@ -984,66 +1289,137 @@ containing a value of this type.
         public static final int ic_launcher=0x7f020057;
     }
     public static final class id {
-        public static final int action_bar=0x7f05001c;
+        public static final int action_bar=0x7f050029;
         public static final int action_bar_activity_content=0x7f050015;
-        public static final int action_bar_container=0x7f05001b;
-        public static final int action_bar_overlay_layout=0x7f05001f;
-        public static final int action_bar_root=0x7f05001a;
-        public static final int action_bar_subtitle=0x7f050023;
-        public static final int action_bar_title=0x7f050022;
-        public static final int action_context_bar=0x7f05001d;
+        public static final int action_bar_container=0x7f050028;
+        public static final int action_bar_overlay_layout=0x7f05002c;
+        public static final int action_bar_root=0x7f050027;
+        public static final int action_bar_subtitle=0x7f050030;
+        public static final int action_bar_title=0x7f05002f;
+        public static final int action_context_bar=0x7f05002a;
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
-        public static final int action_mode_close_button=0x7f050024;
-        public static final int action_settings=0x7f05003d;
-        public static final int activity_chooser_view_content=0x7f050025;
+        public static final int action_mode_close_button=0x7f050031;
+        public static final int action_settings=0x7f050084;
+        public static final int activity_chooser_view_content=0x7f050032;
         public static final int always=0x7f05000b;
+        public static final int autoCompleteTextView1=0x7f05004f;
         public static final int beginning=0x7f050011;
-        public static final int checkbox=0x7f05002d;
+        public static final int box=0x7f050023;
+        public static final int button_block=0x7f050054;
+        public static final int button_blossom=0x7f050077;
+        public static final int button_candy=0x7f050076;
+        public static final int button_custom_theme_1=0x7f050080;
+        public static final int button_custom_theme_2=0x7f050081;
+        public static final int button_dark=0x7f05007c;
+        public static final int button_dark_text=0x7f050059;
+        public static final int button_deep=0x7f050079;
+        public static final int button_ease=0x7f05005b;
+        public static final int button_flat=0x7f050055;
+        public static final int button_grape=0x7f050078;
+        public static final int button_grass=0x7f05007b;
+        public static final int button_light=0x7f050057;
+        public static final int button_orange=0x7f050075;
+        public static final int button_ripple=0x7f05005c;
+        public static final int button_sand=0x7f050074;
+        public static final int button_sea=0x7f05007e;
+        public static final int button_sky=0x7f05007a;
+        public static final int button_snow=0x7f05007d;
+        public static final int button_turquoise=0x7f05007f;
+        public static final int button_white=0x7f050058;
+        public static final int checkbox=0x7f05003a;
+        public static final int checkbox_checked_disabled=0x7f050063;
+        public static final int checkbox_checked_enabled=0x7f050060;
+        public static final int checkbox_unchecked_disabled=0x7f050062;
+        public static final int checkbox_unchecked_enabled=0x7f05005f;
         public static final int collapseActionView=0x7f05000d;
-        public static final int container=0x7f05003c;
-        public static final int default_activity_button=0x7f050028;
+        public static final int container=0x7f050049;
+        public static final int default_activity_button=0x7f050035;
         public static final int dialog=0x7f05000e;
         public static final int disableHome=0x7f050008;
         public static final int dropdown=0x7f05000f;
-        public static final int edit_query=0x7f050030;
+        public static final int edit_query=0x7f05003d;
+        public static final int edittext_box=0x7f05004c;
+        public static final int edittext_flat=0x7f05004b;
+        public static final int edittext_transparent=0x7f05004e;
+        public static final int edittext_transparentbox=0x7f05004d;
         public static final int end=0x7f050013;
-        public static final int expand_activities_button=0x7f050026;
-        public static final int expanded_menu=0x7f05002c;
+        public static final int expand_activities_button=0x7f050033;
+        public static final int expanded_menu=0x7f050039;
+        public static final int fl_box=0x7f050020;
+        public static final int fl_dark=0x7f05001b;
+        public static final int fl_darker=0x7f050025;
+        public static final int fl_ease=0x7f05001d;
+        public static final int fl_flat=0x7f05001f;
+        public static final int fl_light=0x7f05001c;
+        public static final int fl_main=0x7f050026;
+        public static final int fl_none=0x7f05001a;
+        public static final int fl_ripple=0x7f05001e;
+        public static final int fl_transparent=0x7f050021;
+        public static final int flat=0x7f050022;
         public static final int home=0x7f050014;
         public static final int homeAsUp=0x7f050005;
-        public static final int icon=0x7f05002a;
+        public static final int icon=0x7f050037;
         public static final int ifRoom=0x7f05000a;
-        public static final int image=0x7f050027;
+        public static final int image=0x7f050034;
         public static final int listMode=0x7f050001;
-        public static final int list_item=0x7f050029;
+        public static final int list_item=0x7f050036;
         public static final int middle=0x7f050012;
         public static final int never=0x7f050009;
         public static final int none=0x7f050010;
         public static final int normal=0x7f050000;
         public static final int progress_circular=0x7f050018;
         public static final int progress_horizontal=0x7f050019;
-        public static final int radio=0x7f05002f;
-        public static final int search_badge=0x7f050032;
-        public static final int search_bar=0x7f050031;
-        public static final int search_button=0x7f050033;
-        public static final int search_close_btn=0x7f050038;
-        public static final int search_edit_frame=0x7f050034;
-        public static final int search_go_btn=0x7f05003a;
-        public static final int search_mag_icon=0x7f050035;
-        public static final int search_plate=0x7f050036;
-        public static final int search_src_text=0x7f050037;
-        public static final int search_voice_btn=0x7f05003b;
-        public static final int shortcut=0x7f05002e;
+        public static final int radio=0x7f05003c;
+        public static final int radio_checked_disabled=0x7f05006a;
+        public static final int radio_checked_enabled=0x7f050067;
+        public static final int radio_unchecked_disabled=0x7f050069;
+        public static final int radio_unchecked_enabled=0x7f050066;
+        public static final int search_badge=0x7f05003f;
+        public static final int search_bar=0x7f05003e;
+        public static final int search_button=0x7f050040;
+        public static final int search_close_btn=0x7f050045;
+        public static final int search_edit_frame=0x7f050041;
+        public static final int search_go_btn=0x7f050047;
+        public static final int search_mag_icon=0x7f050042;
+        public static final int search_plate=0x7f050043;
+        public static final int search_src_text=0x7f050044;
+        public static final int search_voice_btn=0x7f050048;
+        public static final int seekbar=0x7f050051;
+        public static final int shortcut=0x7f05003b;
         public static final int showCustom=0x7f050007;
         public static final int showHome=0x7f050004;
         public static final int showTitle=0x7f050006;
-        public static final int split_action_bar=0x7f05001e;
-        public static final int submit_area=0x7f050039;
+        public static final int spinner_button=0x7f050083;
+        public static final int split_action_bar=0x7f05002b;
+        public static final int submit_area=0x7f050046;
         public static final int tabMode=0x7f050002;
-        public static final int title=0x7f05002b;
-        public static final int top_action_bar=0x7f050020;
-        public static final int up=0x7f050021;
+        public static final int themes_spinner=0x7f050082;
+        public static final int title=0x7f050038;
+        public static final int title_buttons=0x7f050052;
+        public static final int title_buttons_shape=0x7f050053;
+        public static final int title_buttons_text_appearance=0x7f050056;
+        public static final int title_buttons_touch_effect=0x7f05005a;
+        public static final int title_checkbox=0x7f05005d;
+        public static final int title_checkbox_disabled=0x7f050061;
+        public static final int title_checkbox_enabled=0x7f05005e;
+        public static final int title_edittexts=0x7f05004a;
+        public static final int title_radiobutton=0x7f050064;
+        public static final int title_radiobutton_disabled=0x7f050068;
+        public static final int title_radiobutton_enabled=0x7f050065;
+        public static final int title_seekbar=0x7f050050;
+        public static final int title_themes=0x7f050072;
+        public static final int title_themes_note=0x7f050073;
+        public static final int title_toggle_button=0x7f05006b;
+        public static final int title_toggle_disabled=0x7f05006f;
+        public static final int title_toggle_enabled=0x7f05006c;
+        public static final int toggle_checked_disabled=0x7f050071;
+        public static final int toggle_checked_enabled=0x7f05006e;
+        public static final int toggle_unchecked_disabled=0x7f050070;
+        public static final int toggle_unchecked_enabled=0x7f05006d;
+        public static final int top_action_bar=0x7f05002d;
+        public static final int transparent=0x7f050024;
+        public static final int up=0x7f05002e;
         public static final int useLogo=0x7f050003;
         public static final int withText=0x7f05000c;
     }
@@ -1097,11 +1473,14 @@ containing a value of this type.
         public static final int abc_search_dropdown_item_icons_2line=0x7f030015;
         public static final int abc_search_view=0x7f030016;
         public static final int activity_main=0x7f030017;
-        public static final int fragment_main=0x7f030018;
-        public static final int support_simple_spinner_dropdown_item=0x7f030019;
+        public static final int flat_ui_ref=0x7f030018;
+        public static final int fragment_main=0x7f030019;
+        public static final int simple_flat_list_item=0x7f03001a;
+        public static final int spinner_button=0x7f03001b;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001c;
     }
     public static final class menu {
-        public static final int main=0x7f0c0000;
+        public static final int main=0x7f0d0000;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -2891,5 +3270,1019 @@ containing a value of this type.
           @attr name com.zege.zegedevtest:paddingStart
         */
         public static final int View_paddingStart = 1;
+        /**  Flat AutoCompleteTextView Text 
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #fl_FlatAutoCompleteTextView_fl_autoFieldStyle com.zege.zegedevtest:fl_autoFieldStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatAutoCompleteTextView_fl_borderWidth com.zege.zegedevtest:fl_borderWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatAutoCompleteTextView_fl_cornerRadius com.zege.zegedevtest:fl_cornerRadius}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatAutoCompleteTextView_fl_fontExtension com.zege.zegedevtest:fl_fontExtension}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatAutoCompleteTextView_fl_fontFamily com.zege.zegedevtest:fl_fontFamily}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatAutoCompleteTextView_fl_fontWeight com.zege.zegedevtest:fl_fontWeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatAutoCompleteTextView_fl_textAppearance com.zege.zegedevtest:fl_textAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatAutoCompleteTextView_fl_theme com.zege.zegedevtest:fl_theme}</code></td><td></td></tr>
+           </table>
+           @see #fl_FlatAutoCompleteTextView_fl_autoFieldStyle
+           @see #fl_FlatAutoCompleteTextView_fl_borderWidth
+           @see #fl_FlatAutoCompleteTextView_fl_cornerRadius
+           @see #fl_FlatAutoCompleteTextView_fl_fontExtension
+           @see #fl_FlatAutoCompleteTextView_fl_fontFamily
+           @see #fl_FlatAutoCompleteTextView_fl_fontWeight
+           @see #fl_FlatAutoCompleteTextView_fl_textAppearance
+           @see #fl_FlatAutoCompleteTextView_fl_theme
+         */
+        public static final int[] fl_FlatAutoCompleteTextView = {
+            0x7f01006a, 0x7f01006b, 0x7f01006c, 0x7f01006d,
+            0x7f01006e, 0x7f01006f, 0x7f010070, 0x7f010076
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_autoFieldStyle}
+          attribute's value can be found in the {@link #fl_FlatAutoCompleteTextView} array.
+
+
+          <p>May be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>flat</code></td><td>0</td><td></td></tr>
+<tr><td><code>box</code></td><td>1</td><td></td></tr>
+<tr><td><code>transparent</code></td><td>2</td><td></td></tr>
+</table>
+          @attr name com.zege.zegedevtest:fl_autoFieldStyle
+        */
+        public static final int fl_FlatAutoCompleteTextView_fl_autoFieldStyle = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_borderWidth}
+          attribute's value can be found in the {@link #fl_FlatAutoCompleteTextView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.zege.zegedevtest:fl_borderWidth
+        */
+        public static final int fl_FlatAutoCompleteTextView_fl_borderWidth = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_cornerRadius}
+          attribute's value can be found in the {@link #fl_FlatAutoCompleteTextView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.zege.zegedevtest:fl_cornerRadius
+        */
+        public static final int fl_FlatAutoCompleteTextView_fl_cornerRadius = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_fontExtension}
+          attribute's value can be found in the {@link #fl_FlatAutoCompleteTextView} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.zege.zegedevtest:fl_fontExtension
+        */
+        public static final int fl_FlatAutoCompleteTextView_fl_fontExtension = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_fontFamily}
+          attribute's value can be found in the {@link #fl_FlatAutoCompleteTextView} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.zege.zegedevtest:fl_fontFamily
+        */
+        public static final int fl_FlatAutoCompleteTextView_fl_fontFamily = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_fontWeight}
+          attribute's value can be found in the {@link #fl_FlatAutoCompleteTextView} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.zege.zegedevtest:fl_fontWeight
+        */
+        public static final int fl_FlatAutoCompleteTextView_fl_fontWeight = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_textAppearance}
+          attribute's value can be found in the {@link #fl_FlatAutoCompleteTextView} array.
+
+
+          <p>May be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>fl_none</code></td><td>0</td><td></td></tr>
+<tr><td><code>fl_dark</code></td><td>1</td><td></td></tr>
+<tr><td><code>fl_light</code></td><td>2</td><td></td></tr>
+</table>
+          @attr name com.zege.zegedevtest:fl_textAppearance
+        */
+        public static final int fl_FlatAutoCompleteTextView_fl_textAppearance = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_theme}
+          attribute's value can be found in the {@link #fl_FlatAutoCompleteTextView} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.zege.zegedevtest:fl_theme
+        */
+        public static final int fl_FlatAutoCompleteTextView_fl_theme = 0;
+        /**  FlatButton 
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #fl_FlatButton_fl_blockButtonEffectHeight com.zege.zegedevtest:fl_blockButtonEffectHeight}</code></td><td> Defines the height of the border bottom of the button </td></tr>
+           <tr><td><code>{@link #fl_FlatButton_fl_cornerRadius com.zege.zegedevtest:fl_cornerRadius}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatButton_fl_fontExtension com.zege.zegedevtest:fl_fontExtension}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatButton_fl_fontFamily com.zege.zegedevtest:fl_fontFamily}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatButton_fl_fontWeight com.zege.zegedevtest:fl_fontWeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatButton_fl_textAppearance com.zege.zegedevtest:fl_textAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatButton_fl_theme com.zege.zegedevtest:fl_theme}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatButton_fl_touchEffect com.zege.zegedevtest:fl_touchEffect}</code></td><td></td></tr>
+           </table>
+           @see #fl_FlatButton_fl_blockButtonEffectHeight
+           @see #fl_FlatButton_fl_cornerRadius
+           @see #fl_FlatButton_fl_fontExtension
+           @see #fl_FlatButton_fl_fontFamily
+           @see #fl_FlatButton_fl_fontWeight
+           @see #fl_FlatButton_fl_textAppearance
+           @see #fl_FlatButton_fl_theme
+           @see #fl_FlatButton_fl_touchEffect
+         */
+        public static final int[] fl_FlatButton = {
+            0x7f01006a, 0x7f01006b, 0x7f01006c, 0x7f01006d,
+            0x7f01006e, 0x7f01006f, 0x7f010072, 0x7f010074
+        };
+        /**
+          <p>
+          @attr description
+           Defines the height of the border bottom of the button 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.zege.zegedevtest:fl_blockButtonEffectHeight
+        */
+        public static final int fl_FlatButton_fl_blockButtonEffectHeight = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_cornerRadius}
+          attribute's value can be found in the {@link #fl_FlatButton} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.zege.zegedevtest:fl_cornerRadius
+        */
+        public static final int fl_FlatButton_fl_cornerRadius = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_fontExtension}
+          attribute's value can be found in the {@link #fl_FlatButton} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.zege.zegedevtest:fl_fontExtension
+        */
+        public static final int fl_FlatButton_fl_fontExtension = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_fontFamily}
+          attribute's value can be found in the {@link #fl_FlatButton} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.zege.zegedevtest:fl_fontFamily
+        */
+        public static final int fl_FlatButton_fl_fontFamily = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_fontWeight}
+          attribute's value can be found in the {@link #fl_FlatButton} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.zege.zegedevtest:fl_fontWeight
+        */
+        public static final int fl_FlatButton_fl_fontWeight = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_textAppearance}
+          attribute's value can be found in the {@link #fl_FlatButton} array.
+
+
+          <p>May be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>fl_none</code></td><td>0</td><td></td></tr>
+<tr><td><code>fl_dark</code></td><td>1</td><td></td></tr>
+<tr><td><code>fl_light</code></td><td>2</td><td></td></tr>
+</table>
+          @attr name com.zege.zegedevtest:fl_textAppearance
+        */
+        public static final int fl_FlatButton_fl_textAppearance = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_theme}
+          attribute's value can be found in the {@link #fl_FlatButton} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.zege.zegedevtest:fl_theme
+        */
+        public static final int fl_FlatButton_fl_theme = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_touchEffect}
+          attribute's value can be found in the {@link #fl_FlatButton} array.
+
+
+          <p>May be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>fl_none</code></td><td>0</td><td></td></tr>
+<tr><td><code>fl_ease</code></td><td>1</td><td></td></tr>
+<tr><td><code>fl_ripple</code></td><td>2</td><td></td></tr>
+</table>
+          @attr name com.zege.zegedevtest:fl_touchEffect
+        */
+        public static final int fl_FlatButton_fl_touchEffect = 6;
+        /**  Flat Check Box 
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #fl_FlatCheckBox_fl_cornerRadius com.zege.zegedevtest:fl_cornerRadius}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatCheckBox_fl_dotMargin com.zege.zegedevtest:fl_dotMargin}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatCheckBox_fl_fontExtension com.zege.zegedevtest:fl_fontExtension}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatCheckBox_fl_fontFamily com.zege.zegedevtest:fl_fontFamily}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatCheckBox_fl_fontWeight com.zege.zegedevtest:fl_fontWeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatCheckBox_fl_size com.zege.zegedevtest:fl_size}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatCheckBox_fl_theme com.zege.zegedevtest:fl_theme}</code></td><td></td></tr>
+           </table>
+           @see #fl_FlatCheckBox_fl_cornerRadius
+           @see #fl_FlatCheckBox_fl_dotMargin
+           @see #fl_FlatCheckBox_fl_fontExtension
+           @see #fl_FlatCheckBox_fl_fontFamily
+           @see #fl_FlatCheckBox_fl_fontWeight
+           @see #fl_FlatCheckBox_fl_size
+           @see #fl_FlatCheckBox_fl_theme
+         */
+        public static final int[] fl_FlatCheckBox = {
+            0x7f01006a, 0x7f01006b, 0x7f01006c, 0x7f01006d,
+            0x7f01006f, 0x7f010071, 0x7f010073
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_cornerRadius}
+          attribute's value can be found in the {@link #fl_FlatCheckBox} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.zege.zegedevtest:fl_cornerRadius
+        */
+        public static final int fl_FlatCheckBox_fl_cornerRadius = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_dotMargin}
+          attribute's value can be found in the {@link #fl_FlatCheckBox} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.zege.zegedevtest:fl_dotMargin
+        */
+        public static final int fl_FlatCheckBox_fl_dotMargin = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_fontExtension}
+          attribute's value can be found in the {@link #fl_FlatCheckBox} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.zege.zegedevtest:fl_fontExtension
+        */
+        public static final int fl_FlatCheckBox_fl_fontExtension = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_fontFamily}
+          attribute's value can be found in the {@link #fl_FlatCheckBox} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.zege.zegedevtest:fl_fontFamily
+        */
+        public static final int fl_FlatCheckBox_fl_fontFamily = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_fontWeight}
+          attribute's value can be found in the {@link #fl_FlatCheckBox} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.zege.zegedevtest:fl_fontWeight
+        */
+        public static final int fl_FlatCheckBox_fl_fontWeight = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_size}
+          attribute's value can be found in the {@link #fl_FlatCheckBox} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.zege.zegedevtest:fl_size
+        */
+        public static final int fl_FlatCheckBox_fl_size = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_theme}
+          attribute's value can be found in the {@link #fl_FlatCheckBox} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.zege.zegedevtest:fl_theme
+        */
+        public static final int fl_FlatCheckBox_fl_theme = 0;
+        /**  Flat Edit Text 
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #fl_FlatEditText_fl_borderWidth com.zege.zegedevtest:fl_borderWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatEditText_fl_cornerRadius com.zege.zegedevtest:fl_cornerRadius}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatEditText_fl_fieldStyle com.zege.zegedevtest:fl_fieldStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatEditText_fl_fontExtension com.zege.zegedevtest:fl_fontExtension}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatEditText_fl_fontFamily com.zege.zegedevtest:fl_fontFamily}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatEditText_fl_fontWeight com.zege.zegedevtest:fl_fontWeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatEditText_fl_textAppearance com.zege.zegedevtest:fl_textAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatEditText_fl_theme com.zege.zegedevtest:fl_theme}</code></td><td></td></tr>
+           </table>
+           @see #fl_FlatEditText_fl_borderWidth
+           @see #fl_FlatEditText_fl_cornerRadius
+           @see #fl_FlatEditText_fl_fieldStyle
+           @see #fl_FlatEditText_fl_fontExtension
+           @see #fl_FlatEditText_fl_fontFamily
+           @see #fl_FlatEditText_fl_fontWeight
+           @see #fl_FlatEditText_fl_textAppearance
+           @see #fl_FlatEditText_fl_theme
+         */
+        public static final int[] fl_FlatEditText = {
+            0x7f01006a, 0x7f01006b, 0x7f01006c, 0x7f01006d,
+            0x7f01006e, 0x7f01006f, 0x7f010070, 0x7f010075
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_borderWidth}
+          attribute's value can be found in the {@link #fl_FlatEditText} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.zege.zegedevtest:fl_borderWidth
+        */
+        public static final int fl_FlatEditText_fl_borderWidth = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_cornerRadius}
+          attribute's value can be found in the {@link #fl_FlatEditText} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.zege.zegedevtest:fl_cornerRadius
+        */
+        public static final int fl_FlatEditText_fl_cornerRadius = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_fieldStyle}
+          attribute's value can be found in the {@link #fl_FlatEditText} array.
+
+
+          <p>May be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>fl_flat</code></td><td>0</td><td></td></tr>
+<tr><td><code>fl_box</code></td><td>1</td><td></td></tr>
+<tr><td><code>fl_transparent</code></td><td>2</td><td></td></tr>
+</table>
+          @attr name com.zege.zegedevtest:fl_fieldStyle
+        */
+        public static final int fl_FlatEditText_fl_fieldStyle = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_fontExtension}
+          attribute's value can be found in the {@link #fl_FlatEditText} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.zege.zegedevtest:fl_fontExtension
+        */
+        public static final int fl_FlatEditText_fl_fontExtension = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_fontFamily}
+          attribute's value can be found in the {@link #fl_FlatEditText} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.zege.zegedevtest:fl_fontFamily
+        */
+        public static final int fl_FlatEditText_fl_fontFamily = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_fontWeight}
+          attribute's value can be found in the {@link #fl_FlatEditText} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.zege.zegedevtest:fl_fontWeight
+        */
+        public static final int fl_FlatEditText_fl_fontWeight = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_textAppearance}
+          attribute's value can be found in the {@link #fl_FlatEditText} array.
+
+
+          <p>May be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>fl_none</code></td><td>0</td><td></td></tr>
+<tr><td><code>fl_dark</code></td><td>1</td><td></td></tr>
+<tr><td><code>fl_light</code></td><td>2</td><td></td></tr>
+</table>
+          @attr name com.zege.zegedevtest:fl_textAppearance
+        */
+        public static final int fl_FlatEditText_fl_textAppearance = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_theme}
+          attribute's value can be found in the {@link #fl_FlatEditText} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.zege.zegedevtest:fl_theme
+        */
+        public static final int fl_FlatEditText_fl_theme = 0;
+        /**  Flat Radio Button 
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #fl_FlatRadioButton_fl_borderWidth com.zege.zegedevtest:fl_borderWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatRadioButton_fl_dotMargin com.zege.zegedevtest:fl_dotMargin}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatRadioButton_fl_fontExtension com.zege.zegedevtest:fl_fontExtension}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatRadioButton_fl_fontFamily com.zege.zegedevtest:fl_fontFamily}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatRadioButton_fl_fontWeight com.zege.zegedevtest:fl_fontWeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatRadioButton_fl_size com.zege.zegedevtest:fl_size}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatRadioButton_fl_theme com.zege.zegedevtest:fl_theme}</code></td><td></td></tr>
+           </table>
+           @see #fl_FlatRadioButton_fl_borderWidth
+           @see #fl_FlatRadioButton_fl_dotMargin
+           @see #fl_FlatRadioButton_fl_fontExtension
+           @see #fl_FlatRadioButton_fl_fontFamily
+           @see #fl_FlatRadioButton_fl_fontWeight
+           @see #fl_FlatRadioButton_fl_size
+           @see #fl_FlatRadioButton_fl_theme
+         */
+        public static final int[] fl_FlatRadioButton = {
+            0x7f01006a, 0x7f01006b, 0x7f01006c, 0x7f01006d,
+            0x7f010070, 0x7f010071, 0x7f010073
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_borderWidth}
+          attribute's value can be found in the {@link #fl_FlatRadioButton} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.zege.zegedevtest:fl_borderWidth
+        */
+        public static final int fl_FlatRadioButton_fl_borderWidth = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_dotMargin}
+          attribute's value can be found in the {@link #fl_FlatRadioButton} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.zege.zegedevtest:fl_dotMargin
+        */
+        public static final int fl_FlatRadioButton_fl_dotMargin = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_fontExtension}
+          attribute's value can be found in the {@link #fl_FlatRadioButton} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.zege.zegedevtest:fl_fontExtension
+        */
+        public static final int fl_FlatRadioButton_fl_fontExtension = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_fontFamily}
+          attribute's value can be found in the {@link #fl_FlatRadioButton} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.zege.zegedevtest:fl_fontFamily
+        */
+        public static final int fl_FlatRadioButton_fl_fontFamily = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_fontWeight}
+          attribute's value can be found in the {@link #fl_FlatRadioButton} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.zege.zegedevtest:fl_fontWeight
+        */
+        public static final int fl_FlatRadioButton_fl_fontWeight = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_size}
+          attribute's value can be found in the {@link #fl_FlatRadioButton} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.zege.zegedevtest:fl_size
+        */
+        public static final int fl_FlatRadioButton_fl_size = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_theme}
+          attribute's value can be found in the {@link #fl_FlatRadioButton} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.zege.zegedevtest:fl_theme
+        */
+        public static final int fl_FlatRadioButton_fl_theme = 0;
+        /**  Flat Seek Bar 
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #fl_FlatSeekBar_fl_size com.zege.zegedevtest:fl_size}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatSeekBar_fl_theme com.zege.zegedevtest:fl_theme}</code></td><td></td></tr>
+           </table>
+           @see #fl_FlatSeekBar_fl_size
+           @see #fl_FlatSeekBar_fl_theme
+         */
+        public static final int[] fl_FlatSeekBar = {
+            0x7f01006a, 0x7f010071
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_size}
+          attribute's value can be found in the {@link #fl_FlatSeekBar} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.zege.zegedevtest:fl_size
+        */
+        public static final int fl_FlatSeekBar_fl_size = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_theme}
+          attribute's value can be found in the {@link #fl_FlatSeekBar} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.zege.zegedevtest:fl_theme
+        */
+        public static final int fl_FlatSeekBar_fl_theme = 0;
+        /**  Flat Text View 
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #fl_FlatTextView_fl_backgroundColor com.zege.zegedevtest:fl_backgroundColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatTextView_fl_borderWidth com.zege.zegedevtest:fl_borderWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatTextView_fl_cornerRadius com.zege.zegedevtest:fl_cornerRadius}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatTextView_fl_customBackgroundColor com.zege.zegedevtest:fl_customBackgroundColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatTextView_fl_fontExtension com.zege.zegedevtest:fl_fontExtension}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatTextView_fl_fontFamily com.zege.zegedevtest:fl_fontFamily}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatTextView_fl_fontWeight com.zege.zegedevtest:fl_fontWeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatTextView_fl_textColor com.zege.zegedevtest:fl_textColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatTextView_fl_theme com.zege.zegedevtest:fl_theme}</code></td><td></td></tr>
+           </table>
+           @see #fl_FlatTextView_fl_backgroundColor
+           @see #fl_FlatTextView_fl_borderWidth
+           @see #fl_FlatTextView_fl_cornerRadius
+           @see #fl_FlatTextView_fl_customBackgroundColor
+           @see #fl_FlatTextView_fl_fontExtension
+           @see #fl_FlatTextView_fl_fontFamily
+           @see #fl_FlatTextView_fl_fontWeight
+           @see #fl_FlatTextView_fl_textColor
+           @see #fl_FlatTextView_fl_theme
+         */
+        public static final int[] fl_FlatTextView = {
+            0x7f01006a, 0x7f01006b, 0x7f01006c, 0x7f01006d,
+            0x7f01006f, 0x7f010070, 0x7f010077, 0x7f010078,
+            0x7f010079
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_backgroundColor}
+          attribute's value can be found in the {@link #fl_FlatTextView} array.
+
+
+          <p>May be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>fl_darker</code></td><td>0</td><td></td></tr>
+<tr><td><code>fl_dark</code></td><td>1</td><td></td></tr>
+<tr><td><code>fl_main</code></td><td>2</td><td></td></tr>
+<tr><td><code>fl_light</code></td><td>3</td><td></td></tr>
+</table>
+          @attr name com.zege.zegedevtest:fl_backgroundColor
+        */
+        public static final int fl_FlatTextView_fl_backgroundColor = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_borderWidth}
+          attribute's value can be found in the {@link #fl_FlatTextView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.zege.zegedevtest:fl_borderWidth
+        */
+        public static final int fl_FlatTextView_fl_borderWidth = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_cornerRadius}
+          attribute's value can be found in the {@link #fl_FlatTextView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.zege.zegedevtest:fl_cornerRadius
+        */
+        public static final int fl_FlatTextView_fl_cornerRadius = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_customBackgroundColor}
+          attribute's value can be found in the {@link #fl_FlatTextView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.zege.zegedevtest:fl_customBackgroundColor
+        */
+        public static final int fl_FlatTextView_fl_customBackgroundColor = 8;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_fontExtension}
+          attribute's value can be found in the {@link #fl_FlatTextView} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.zege.zegedevtest:fl_fontExtension
+        */
+        public static final int fl_FlatTextView_fl_fontExtension = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_fontFamily}
+          attribute's value can be found in the {@link #fl_FlatTextView} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.zege.zegedevtest:fl_fontFamily
+        */
+        public static final int fl_FlatTextView_fl_fontFamily = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_fontWeight}
+          attribute's value can be found in the {@link #fl_FlatTextView} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.zege.zegedevtest:fl_fontWeight
+        */
+        public static final int fl_FlatTextView_fl_fontWeight = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_textColor}
+          attribute's value can be found in the {@link #fl_FlatTextView} array.
+
+
+          <p>May be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>fl_darker</code></td><td>0</td><td></td></tr>
+<tr><td><code>fl_dark</code></td><td>1</td><td></td></tr>
+<tr><td><code>fl_main</code></td><td>2</td><td></td></tr>
+<tr><td><code>fl_light</code></td><td>3</td><td></td></tr>
+</table>
+          @attr name com.zege.zegedevtest:fl_textColor
+        */
+        public static final int fl_FlatTextView_fl_textColor = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_theme}
+          attribute's value can be found in the {@link #fl_FlatTextView} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.zege.zegedevtest:fl_theme
+        */
+        public static final int fl_FlatTextView_fl_theme = 0;
+        /**  Flat Toggle Button 
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #fl_FlatToggleButton_fl_cornerRadius com.zege.zegedevtest:fl_cornerRadius}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatToggleButton_fl_space com.zege.zegedevtest:fl_space}</code></td><td></td></tr>
+           <tr><td><code>{@link #fl_FlatToggleButton_fl_theme com.zege.zegedevtest:fl_theme}</code></td><td></td></tr>
+           </table>
+           @see #fl_FlatToggleButton_fl_cornerRadius
+           @see #fl_FlatToggleButton_fl_space
+           @see #fl_FlatToggleButton_fl_theme
+         */
+        public static final int[] fl_FlatToggleButton = {
+            0x7f01006a, 0x7f01006f, 0x7f01007a
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_cornerRadius}
+          attribute's value can be found in the {@link #fl_FlatToggleButton} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.zege.zegedevtest:fl_cornerRadius
+        */
+        public static final int fl_FlatToggleButton_fl_cornerRadius = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_space}
+          attribute's value can be found in the {@link #fl_FlatToggleButton} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.zege.zegedevtest:fl_space
+        */
+        public static final int fl_FlatToggleButton_fl_space = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.zege.zegedevtest.R.attr#fl_theme}
+          attribute's value can be found in the {@link #fl_FlatToggleButton} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.zege.zegedevtest:fl_theme
+        */
+        public static final int fl_FlatToggleButton_fl_theme = 0;
     };
 }
