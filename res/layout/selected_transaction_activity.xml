@@ -17,7 +17,7 @@
             android:layout_marginLeft="10dip"
             android:orientation="vertical" >
 
-            <com.zege.zegedevtest.flatui.views.FlatTextView
+            <com.zege.devtest.flatui.views.FlatTextView
                 android:id="@+id/title_toggle_disabled"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -27,7 +27,7 @@
                 android:textSize="16dip"
                 flatui:fl_textColor="fl_main" />
 
-            <com.zege.zegedevtest.flatui.views.FlatToggleButton
+            <com.zege.devtest.flatui.views.FlatToggleButton
                 android:id="@+id/toggle_checked_disabled"
                 android:layout_width="72dp"
                 android:layout_height="36dp"
@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:weightSum="2" >
             
-            <com.zege.zegedevtest.flatui.views.FlatButton
+            <com.zege.devtest.flatui.views.FlatButton
                 android:id="@+id/button_flat"
                 android:layout_width="0dp"
                 android:layout_height="45dp"
@@ -52,7 +52,7 @@
                 android:text="Edit Record"
                 flatui:fl_textAppearance="fl_light" />
 
-            <com.zege.zegedevtest.flatui.views.FlatButton
+            <com.zege.devtest.flatui.views.FlatButton
                 android:id="@+id/buttonDeleteRecord"
                 android:layout_width="0dp"
                 android:layout_height="45dp"

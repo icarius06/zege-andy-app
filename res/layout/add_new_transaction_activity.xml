@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
-            <com.zege.zegedevtest.flatui.views.FlatTextView
+            <com.zege.devtest.flatui.views.FlatTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dip"
@@ -45,8 +45,8 @@
                 android:paddingLeft="10dip"
                 android:paddingRight="10dip" >
 
-                <com.zege.zegedevtest.flatui.views.FlatTextView
-                    android:id="@+id/amount"
+                <com.zege.devtest.flatui.views.FlatTextView
+                    android:id="@+id/amount_label"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dip"
@@ -58,21 +58,21 @@
                     android:textSize="20sp"
                     flatui:fl_textColor="fl_main" />
 
-                <com.zege.zegedevtest.flatui.views.FlatEditText
-                    android:id="@+id/edittext_box"
+                <com.zege.devtest.flatui.views.FlatEditText
+                    android:id="@+id/amountEdittext_box"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dip"
                     android:gravity="center_vertical"
-                    android:hint="Box"
+                    android:hint="Enter the transaction amount"
                     android:includeFontPadding="true"
                     android:inputType="numberDecimal"
                     android:maxLines="1"
                     flatui:fl_cornerRadius="0dp"
                     flatui:fl_fieldStyle="fl_box" />
 
-                <com.zege.zegedevtest.flatui.views.FlatTextView
-                    android:id="@+id/units"
+                <com.zege.devtest.flatui.views.FlatTextView
+                    android:id="@+id/unitsLabel"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dip"
@@ -84,8 +84,8 @@
                     android:textSize="20sp"
                     flatui:fl_textColor="fl_main" />
 
-                <com.zege.zegedevtest.flatui.views.FlatEditText
-                    android:id="@+id/edittext_units"
+                <com.zege.devtest.flatui.views.FlatEditText
+                    android:id="@+id/unitsEdittext_box"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dip"
@@ -97,8 +97,8 @@
                     flatui:fl_cornerRadius="0dp"
                     flatui:fl_fieldStyle="fl_box" />
 
-                <com.zege.zegedevtest.flatui.views.FlatTextView
-                    android:id="@+id/particulars"
+                <com.zege.devtest.flatui.views.FlatTextView
+                    android:id="@+id/particularsLabel"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dip"
@@ -110,8 +110,8 @@
                     android:textSize="20sp"
                     flatui:fl_textColor="fl_main" />
 
-                <com.zege.zegedevtest.flatui.views.FlatEditText
-                    android:id="@+id/edittext_particulars"
+                <com.zege.devtest.flatui.views.FlatEditText
+                    android:id="@+id/particularsEdittext_box"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dip"
@@ -132,7 +132,7 @@
                 android:paddingLeft="10dip"
                 android:paddingRight="10dip" >
 
-                <com.zege.zegedevtest.flatui.views.FlatTextView
+                <com.zege.devtest.flatui.views.FlatTextView
                     android:id="@+id/title_checkbox_priority"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -159,7 +159,7 @@
                         android:layout_weight="1"
                         android:orientation="vertical" >
 
-                        <com.zege.zegedevtest.flatui.views.FlatCheckBox
+                        <com.zege.devtest.flatui.views.FlatCheckBox
                             android:id="@+id/checkbox_very_high"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -169,7 +169,7 @@
                             android:text="Very High"
                             flatui:fl_size="20dip" />
 
-                        <com.zege.zegedevtest.flatui.views.FlatCheckBox
+                        <com.zege.devtest.flatui.views.FlatCheckBox
                             android:id="@+id/checkbox_high"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -187,7 +187,7 @@
                         android:layout_weight="1"
                         android:orientation="vertical" >
 
-                        <com.zege.zegedevtest.flatui.views.FlatCheckBox
+                        <com.zege.devtest.flatui.views.FlatCheckBox
                             android:id="@+id/checkbox_medium"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -197,7 +197,7 @@
                             android:text="Medium"
                             flatui:fl_size="20dip" />
 
-                        <com.zege.zegedevtest.flatui.views.FlatCheckBox
+                        <com.zege.devtest.flatui.views.FlatCheckBox
                             android:id="@+id/checkbox_low"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -217,7 +217,7 @@
                 android:gravity="bottom|center"
                 android:weightSum="2" >
 
-                <com.zege.zegedevtest.flatui.views.FlatButton
+                <com.zege.devtest.flatui.views.FlatButton
                     android:id="@+id/buttonCancel"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -226,7 +226,7 @@
                     android:text="Cancel"
                     flatui:fl_textAppearance="fl_light" />
 
-                <com.zege.zegedevtest.flatui.views.FlatButton
+                <com.zege.devtest.flatui.views.FlatButton
                     android:id="@+id/buttonSubmit"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"

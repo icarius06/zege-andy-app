@@ -13,7 +13,7 @@
         android:orientation="horizontal"
         android:weightSum="4" >
 
-        <com.zege.zegedevtest.flatui.views.FlatTextView
+        <com.zege.devtest.flatui.views.FlatTextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.38"
@@ -33,7 +33,7 @@
             android:background="@android:color/white"
             android:padding="15dip" />
 
-        <com.zege.zegedevtest.flatui.views.FlatTextView
+        <com.zege.devtest.flatui.views.FlatTextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.58"
@@ -53,7 +53,7 @@
             android:background="@android:color/white"
             android:padding="15dip" />
 
-        <com.zege.zegedevtest.flatui.views.FlatTextView
+        <com.zege.devtest.flatui.views.FlatTextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1.98"
@@ -74,7 +74,7 @@
             android:background="@android:color/white"
             android:padding="15dip" />
 
-        <com.zege.zegedevtest.flatui.views.FlatTextView
+        <com.zege.devtest.flatui.views.FlatTextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"

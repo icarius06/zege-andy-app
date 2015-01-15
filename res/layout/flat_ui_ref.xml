@@ -24,7 +24,7 @@
             android:layout_height="match_parent">
 
             <!-- Edit Text -->
-            <com.zege.zegedevtest.flatui.views.FlatTextView
+            <com.zege.devtest.flatui.views.FlatTextView
                 android:id="@+id/title_edittexts"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -45,7 +45,7 @@
                 android:paddingLeft="10dip"
                 android:paddingRight="10dip">
 
-                <com.zege.zegedevtest.flatui.views.FlatEditText
+                <com.zege.devtest.flatui.views.FlatEditText
                     android:id="@+id/edittext_flat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -57,7 +57,7 @@
                     flatui:fl_fieldStyle="fl_flat"
                     flatui:fl_theme="@array/grass" />
 
-                <com.zege.zegedevtest.flatui.views.FlatEditText
+                <com.zege.devtest.flatui.views.FlatEditText
                     android:id="@+id/edittext_box"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -69,7 +69,7 @@
                     flatui:fl_fieldStyle="fl_box"
                     flatui:fl_theme="@array/grass" />
 
-                <com.zege.zegedevtest.flatui.views.FlatEditText
+                <com.zege.devtest.flatui.views.FlatEditText
                     android:id="@+id/edittext_transparentbox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -81,7 +81,7 @@
                     flatui:fl_fieldStyle="fl_transparent"
                     flatui:fl_theme="@array/grass" />
 
-                <com.zege.zegedevtest.flatui.views.FlatEditText
+                <com.zege.devtest.flatui.views.FlatEditText
                     android:id="@+id/edittext_transparent"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -94,7 +94,7 @@
                     flatui:fl_theme="@array/grass"
                     flatui:fl_borderWidth="0dp" />
 
-                <com.zege.zegedevtest.flatui.views.FlatAutoCompleteTextView
+                <com.zege.devtest.flatui.views.FlatAutoCompleteTextView
                     android:id="@+id/autoCompleteTextView1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -108,7 +108,7 @@
 
 
             <!-- Seek Bar -->
-            <com.zege.zegedevtest.flatui.views.FlatTextView
+            <com.zege.devtest.flatui.views.FlatTextView
                 android:id="@+id/title_seekbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -128,7 +128,7 @@
                 android:paddingLeft="10dip"
                 android:paddingRight="10dip">
 
-                <com.zege.zegedevtest.flatui.views.FlatSeekBar
+                <com.zege.devtest.flatui.views.FlatSeekBar
                     android:id="@+id/seekbar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -139,7 +139,7 @@
 
 
             <!-- Button -->
-            <com.zege.zegedevtest.flatui.views.FlatTextView
+            <com.zege.devtest.flatui.views.FlatTextView
                 android:id="@+id/title_buttons"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -159,7 +159,7 @@
                 android:paddingLeft="10dip"
                 android:paddingRight="10dip">
 
-                <com.zege.zegedevtest.flatui.views.FlatTextView
+                <com.zege.devtest.flatui.views.FlatTextView
                     android:id="@+id/title_buttons_shape"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -175,7 +175,7 @@
                     android:layout_height="wrap_content"
                     android:weightSum="2">
 
-                    <com.zege.zegedevtest.flatui.views.FlatButton
+                    <com.zege.devtest.flatui.views.FlatButton
                         android:id="@+id/button_block"
                         android:layout_width="0dp"
                         android:layout_height="45dp"
@@ -185,7 +185,7 @@
                         flatui:fl_textAppearance="fl_light"
                         flatui:fl_blockButtonEffectHeight="3dp" />
 
-                    <com.zege.zegedevtest.flatui.views.FlatButton
+                    <com.zege.devtest.flatui.views.FlatButton
                         android:id="@+id/button_flat"
                         android:layout_width="0dp"
                         android:layout_height="45dp"
@@ -196,7 +196,7 @@
 
                 </LinearLayout>
 
-                <com.zege.zegedevtest.flatui.views.FlatTextView
+                <com.zege.devtest.flatui.views.FlatTextView
                     android:id="@+id/title_buttons_text_appearance"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -212,7 +212,7 @@
                     android:layout_height="wrap_content"
                     android:weightSum="3">
 
-                    <com.zege.zegedevtest.flatui.views.FlatButton
+                    <com.zege.devtest.flatui.views.FlatButton
                         android:id="@+id/button_light"
                         android:layout_width="0dp"
                         android:layout_height="45dp"
@@ -221,7 +221,7 @@
                         android:layout_margin="3dp"
                         flatui:fl_textAppearance="fl_light" />
 
-                    <com.zege.zegedevtest.flatui.views.FlatButton
+                    <com.zege.devtest.flatui.views.FlatButton
                         android:id="@+id/button_white"
                         android:layout_width="0dp"
                         android:layout_height="45dp"
@@ -229,7 +229,7 @@
                         android:layout_weight="1"
                         android:layout_margin="3dp" />
 
-                    <com.zege.zegedevtest.flatui.views.FlatButton
+                    <com.zege.devtest.flatui.views.FlatButton
                         android:id="@+id/button_dark_text"
                         android:layout_width="0dp"
                         android:layout_height="45dp"
@@ -240,7 +240,7 @@
 
                 </LinearLayout>
 
-                <com.zege.zegedevtest.flatui.views.FlatTextView
+                <com.zege.devtest.flatui.views.FlatTextView
                     android:id="@+id/title_buttons_touch_effect"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -256,7 +256,7 @@
                     android:layout_height="wrap_content"
                     android:weightSum="2">
 
-                    <com.zege.zegedevtest.flatui.views.FlatButton
+                    <com.zege.devtest.flatui.views.FlatButton
                         android:id="@+id/button_ease"
                         android:layout_width="0dp"
                         android:layout_height="45dp"
@@ -266,7 +266,7 @@
                         flatui:fl_textAppearance="fl_light"
                         flatui:fl_touchEffect="fl_ease" />
 
-                    <com.zege.zegedevtest.flatui.views.FlatButton
+                    <com.zege.devtest.flatui.views.FlatButton
                         android:id="@+id/button_ripple"
                         android:layout_width="0dp"
                         android:layout_height="45dp"
@@ -282,7 +282,7 @@
 
 
             <!-- CheckBox -->
-            <com.zege.zegedevtest.flatui.views.FlatTextView
+            <com.zege.devtest.flatui.views.FlatTextView
                 android:id="@+id/title_checkbox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -308,7 +308,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1">
 
-                    <com.zege.zegedevtest.flatui.views.FlatTextView
+                    <com.zege.devtest.flatui.views.FlatTextView
                         android:id="@+id/title_checkbox_enabled"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -324,7 +324,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dip">
 
-                        <com.zege.zegedevtest.flatui.views.FlatCheckBox
+                        <com.zege.devtest.flatui.views.FlatCheckBox
                             android:id="@+id/checkbox_unchecked_enabled"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -334,7 +334,7 @@
                             android:layout_margin="5dip"
                             flatui:fl_size="20dip" />
 
-                        <com.zege.zegedevtest.flatui.views.FlatCheckBox
+                        <com.zege.devtest.flatui.views.FlatCheckBox
                             android:id="@+id/checkbox_checked_enabled"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -355,7 +355,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1">
 
-                    <com.zege.zegedevtest.flatui.views.FlatTextView
+                    <com.zege.devtest.flatui.views.FlatTextView
                         android:id="@+id/title_checkbox_disabled"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -371,7 +371,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dip">
 
-                        <com.zege.zegedevtest.flatui.views.FlatCheckBox
+                        <com.zege.devtest.flatui.views.FlatCheckBox
                             android:id="@+id/checkbox_unchecked_disabled"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -382,7 +382,7 @@
                             android:layout_margin="5dip"
                             flatui:fl_size="20dip" />
 
-                        <com.zege.zegedevtest.flatui.views.FlatCheckBox
+                        <com.zege.devtest.flatui.views.FlatCheckBox
                             android:id="@+id/checkbox_checked_disabled"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -401,7 +401,7 @@
 
 
             <!-- RadioButton -->
-            <com.zege.zegedevtest.flatui.views.FlatTextView
+            <com.zege.devtest.flatui.views.FlatTextView
                 android:id="@+id/title_radiobutton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -427,7 +427,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1">
 
-                    <com.zege.zegedevtest.flatui.views.FlatTextView
+                    <com.zege.devtest.flatui.views.FlatTextView
                         android:id="@+id/title_radiobutton_enabled"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -447,7 +447,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="left">
 
-                            <com.zege.zegedevtest.flatui.views.FlatRadioButton
+                            <com.zege.devtest.flatui.views.FlatRadioButton
                                 android:id="@+id/radio_unchecked_enabled"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -458,7 +458,7 @@
                                 flatui:fl_size="20dip"
                                 flatui:fl_dotMargin="1dp" />
 
-                            <com.zege.zegedevtest.flatui.views.FlatRadioButton
+                            <com.zege.devtest.flatui.views.FlatRadioButton
                                 android:id="@+id/radio_checked_enabled"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -481,7 +481,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1">
 
-                    <com.zege.zegedevtest.flatui.views.FlatTextView
+                    <com.zege.devtest.flatui.views.FlatTextView
                         android:id="@+id/title_radiobutton_disabled"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -501,7 +501,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="left">
 
-                            <com.zege.zegedevtest.flatui.views.FlatRadioButton
+                            <com.zege.devtest.flatui.views.FlatRadioButton
                                 android:id="@+id/radio_unchecked_disabled"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -513,7 +513,7 @@
                                 flatui:fl_size="20dip"
                                 flatui:fl_dotMargin="1dp" />
 
-                            <com.zege.zegedevtest.flatui.views.FlatRadioButton
+                            <com.zege.devtest.flatui.views.FlatRadioButton
                                 android:id="@+id/radio_checked_disabled"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -535,7 +535,7 @@
 
 
             <!-- Toggle Button -->
-            <com.zege.zegedevtest.flatui.views.FlatTextView
+            <com.zege.devtest.flatui.views.FlatTextView
                 android:id="@+id/title_toggle_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -561,7 +561,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1">
 
-                    <com.zege.zegedevtest.flatui.views.FlatTextView
+                    <com.zege.devtest.flatui.views.FlatTextView
                         android:id="@+id/title_toggle_enabled"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -577,7 +577,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dip">
 
-                        <com.zege.zegedevtest.flatui.views.FlatToggleButton
+                        <com.zege.devtest.flatui.views.FlatToggleButton
                             android:id="@+id/toggle_unchecked_enabled"
                             android:layout_width="72dp"
                             android:layout_height="36dp"
@@ -585,7 +585,7 @@
                             flatui:fl_space="14dp"
                             flatui:fl_cornerRadius="18dp" />
 
-                        <com.zege.zegedevtest.flatui.views.FlatToggleButton
+                        <com.zege.devtest.flatui.views.FlatToggleButton
                             android:id="@+id/toggle_checked_enabled"
                             android:layout_width="72dp"
                             android:layout_height="36dp"
@@ -604,7 +604,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1">
 
-                    <com.zege.zegedevtest.flatui.views.FlatTextView
+                    <com.zege.devtest.flatui.views.FlatTextView
                         android:id="@+id/title_toggle_disabled"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -620,7 +620,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dip">
 
-                        <com.zege.zegedevtest.flatui.views.FlatToggleButton
+                        <com.zege.devtest.flatui.views.FlatToggleButton
                             android:id="@+id/toggle_unchecked_disabled"
                             android:layout_width="72dp"
                             android:layout_height="36dp"
@@ -629,7 +629,7 @@
                             flatui:fl_space="14dp"
                             flatui:fl_cornerRadius="18dp" />
 
-                        <com.zege.zegedevtest.flatui.views.FlatToggleButton
+                        <com.zege.devtest.flatui.views.FlatToggleButton
                             android:id="@+id/toggle_checked_disabled"
                             android:layout_width="72dp"
                             android:layout_height="36dp"
@@ -652,7 +652,7 @@
                 android:layout_marginTop="20dip"
                 android:layout_marginLeft="5dip">
 
-                <com.zege.zegedevtest.flatui.views.FlatTextView
+                <com.zege.devtest.flatui.views.FlatTextView
                     android:id="@+id/title_themes"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -662,7 +662,7 @@
                     android:textSize="20dip"
                     flatui:fl_textColor="fl_main" />
 
-                <com.zege.zegedevtest.flatui.views.FlatTextView
+                <com.zege.devtest.flatui.views.FlatTextView
                     android:id="@+id/title_themes_note"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -687,7 +687,7 @@
                     android:layout_height="wrap_content"
                     android:weightSum="2">
 
-                    <com.zege.zegedevtest.flatui.views.FlatButton
+                    <com.zege.devtest.flatui.views.FlatButton
                         android:id="@+id/button_sand"
                         android:layout_width="0dp"
                         android:layout_height="45dp"
@@ -698,7 +698,7 @@
                         flatui:fl_theme="@array/sand"
                         flatui:fl_textAppearance="fl_light" />
 
-                    <com.zege.zegedevtest.flatui.views.FlatButton
+                    <com.zege.devtest.flatui.views.FlatButton
                         android:id="@+id/button_orange"
                         android:layout_width="0dp"
                         android:layout_height="45dp"
@@ -716,7 +716,7 @@
                     android:layout_height="wrap_content"
                     android:weightSum="2">
 
-                    <com.zege.zegedevtest.flatui.views.FlatButton
+                    <com.zege.devtest.flatui.views.FlatButton
                         android:id="@+id/button_candy"
                         android:layout_width="0dp"
                         android:layout_height="45dp"
@@ -727,7 +727,7 @@
                         flatui:fl_theme="@array/candy"
                         flatui:fl_textAppearance="fl_light" />
 
-                    <com.zege.zegedevtest.flatui.views.FlatButton
+                    <com.zege.devtest.flatui.views.FlatButton
                         android:id="@+id/button_blossom"
                         android:layout_width="0dp"
                         android:layout_height="45dp"
@@ -745,7 +745,7 @@
                     android:layout_height="wrap_content"
                     android:weightSum="2">
 
-                    <com.zege.zegedevtest.flatui.views.FlatButton
+                    <com.zege.devtest.flatui.views.FlatButton
                         android:id="@+id/button_grape"
                         android:layout_width="0dp"
                         android:layout_height="45dp"
@@ -756,7 +756,7 @@
                         flatui:fl_theme="@array/grape"
                         flatui:fl_textAppearance="fl_light" />
 
-                    <com.zege.zegedevtest.flatui.views.FlatButton
+                    <com.zege.devtest.flatui.views.FlatButton
                         android:id="@+id/button_deep"
                         android:layout_width="0dp"
                         android:layout_height="45dp"
@@ -774,7 +774,7 @@
                     android:layout_height="wrap_content"
                     android:weightSum="2">
 
-                    <com.zege.zegedevtest.flatui.views.FlatButton
+                    <com.zege.devtest.flatui.views.FlatButton
                         android:id="@+id/button_sky"
                         android:layout_width="0dp"
                         android:layout_height="45dp"
@@ -785,7 +785,7 @@
                         flatui:fl_theme="@array/sky"
                         flatui:fl_textAppearance="fl_light" />
 
-                    <com.zege.zegedevtest.flatui.views.FlatButton
+                    <com.zege.devtest.flatui.views.FlatButton
                         android:id="@+id/button_grass"
                         android:layout_width="0dp"
                         android:layout_height="45dp"
@@ -803,7 +803,7 @@
                     android:layout_height="wrap_content"
                     android:weightSum="2">
 
-                    <com.zege.zegedevtest.flatui.views.FlatButton
+                    <com.zege.devtest.flatui.views.FlatButton
                         android:id="@+id/button_dark"
                         android:layout_width="0dp"
                         android:layout_height="45dp"
@@ -814,7 +814,7 @@
                         flatui:fl_theme="@array/dark"
                         flatui:fl_textAppearance="fl_light" />
 
-                    <com.zege.zegedevtest.flatui.views.FlatButton
+                    <com.zege.devtest.flatui.views.FlatButton
                         android:id="@+id/button_snow"
                         android:layout_width="0dp"
                         android:layout_height="45dp"
@@ -832,7 +832,7 @@
                     android:layout_height="wrap_content"
                     android:weightSum="2">
 
-                    <com.zege.zegedevtest.flatui.views.FlatButton
+                    <com.zege.devtest.flatui.views.FlatButton
                         android:id="@+id/button_sea"
                         android:layout_width="0dp"
                         android:layout_height="45dp"
@@ -843,7 +843,7 @@
                         flatui:fl_theme="@array/sea"
                         flatui:fl_textAppearance="fl_light" />
 
-                    <com.zege.zegedevtest.flatui.views.FlatButton
+                    <com.zege.devtest.flatui.views.FlatButton
                         android:id="@+id/button_turquoise"
                         android:layout_width="0dp"
                         android:layout_height="45dp"
@@ -861,7 +861,7 @@
                     android:layout_height="wrap_content"
                     android:weightSum="2">
 
-                    <com.zege.zegedevtest.flatui.views.FlatButton
+                    <com.zege.devtest.flatui.views.FlatButton
                         android:id="@+id/button_custom_theme_1"
                         android:layout_width="0dp"
                         android:layout_height="45dp"
@@ -872,7 +872,7 @@
                         flatui:fl_textAppearance="fl_light"
                         flatui:fl_theme="@array/custom_theme_1" />
 
-                    <com.zege.zegedevtest.flatui.views.FlatButton
+                    <com.zege.devtest.flatui.views.FlatButton
                         android:id="@+id/button_custom_theme_2"
                         android:layout_width="0dp"
                         android:layout_height="45dp"
@@ -895,7 +895,7 @@
                 android:layout_marginLeft="5dip"
                 android:orientation="vertical">
 
-                <com.zege.zegedevtest.flatui.views.FlatTextView
+                <com.zege.devtest.flatui.views.FlatTextView
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:maxLines="1"
@@ -904,7 +904,7 @@
                     android:textSize="20dip"
                     flatui:fl_textColor="fl_main" />
 
-                <com.zege.zegedevtest.flatui.views.FlatTextView
+                <com.zege.devtest.flatui.views.FlatTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"

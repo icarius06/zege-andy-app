@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.zege.zegedevtest.TransactionsHomeFragment" >
+    tools:context="com.zege.devtest.TransactionsHomeFragment" >
 
     <LinearLayout
         android:id="@+id/home_label"
@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical" >
 
-        <com.zege.zegedevtest.flatui.views.FlatTextView
+        <com.zege.devtest.flatui.views.FlatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dip"
@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal" >
 
-            <com.zege.zegedevtest.flatui.views.FlatButton
+            <com.zege.devtest.flatui.views.FlatButton
                 android:id="@+id/button_add_new"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -44,7 +44,7 @@
                 flatui:fl_cornerRadius="18dp"
                 flatui:fl_theme="@array/grass" />
 
-            <com.zege.zegedevtest.flatui.views.FlatButton
+            <com.zege.devtest.flatui.views.FlatButton
                 android:id="@+id/button_white"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -58,6 +58,7 @@
         </LinearLayout>
     </LinearLayout>
 
+    
     <LinearLayout
         android:id="@+id/searchBox"
         android:layout_width="match_parent"
@@ -65,7 +66,7 @@
         android:layout_below="@+id/home_label"
         android:layout_marginTop="20dp" >
 
-        <com.zege.zegedevtest.flatui.views.FlatEditText
+        <com.zege.devtest.flatui.views.FlatEditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="5dip"

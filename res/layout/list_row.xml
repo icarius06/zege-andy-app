@@ -13,7 +13,7 @@
         android:orientation="horizontal"
         android:weightSum="4" >
 
-        <com.zege.zegedevtest.flatui.views.FlatTextView
+        <com.zege.devtest.flatui.views.FlatTextView
             android:id="@+id/transaction_id"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -23,7 +23,7 @@
             flatui:fl_cornerRadius="0dp"
             flatui:fl_textColor="fl_main" />
 
-        <com.zege.zegedevtest.flatui.views.FlatTextView
+        <com.zege.devtest.flatui.views.FlatTextView
             android:id="@+id/trans_status"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -41,7 +41,7 @@
             android:orientation="vertical"
             android:padding="10dip" >
 
-            <com.zege.zegedevtest.flatui.views.FlatTextView
+            <com.zege.devtest.flatui.views.FlatTextView
                 android:id="@+id/description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -50,7 +50,7 @@
                 flatui:fl_cornerRadius="0dp"
                 flatui:fl_textColor="fl_main" />
 
-            <com.zege.zegedevtest.flatui.views.FlatTextView
+            <com.zege.devtest.flatui.views.FlatTextView
                 android:id="@+id/units"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -60,7 +60,7 @@
                 flatui:fl_cornerRadius="0dp"
                 flatui:fl_textColor="fl_main" />
 
-            <com.zege.zegedevtest.flatui.views.FlatTextView
+            <com.zege.devtest.flatui.views.FlatTextView
                 android:id="@+id/particulars"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -70,7 +70,7 @@
                 flatui:fl_cornerRadius="0dp"
                 flatui:fl_textColor="fl_main" />
 
-            <com.zege.zegedevtest.flatui.views.FlatTextView
+            <com.zege.devtest.flatui.views.FlatTextView
                 android:id="@+id/amount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -81,7 +81,7 @@
                 flatui:fl_textColor="fl_main" />
         </LinearLayout>
 
-        <com.zege.zegedevtest.flatui.views.FlatTextView
+        <com.zege.devtest.flatui.views.FlatTextView
             android:id="@+id/trans_status"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
