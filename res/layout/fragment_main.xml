@@ -9,16 +9,89 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.zege.zegedevtest.TransactionsHomeFragment" >
 
-    <com.zege.zegedevtest.flatui.views.FlatTextView
-                android:id="@+id/title_edittexts"
-                android:layout_width="match_parent"
+    <LinearLayout
+        android:id="@+id/home_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.zege.zegedevtest.flatui.views.FlatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="10dip"
+            android:maxLines="1"
+            android:text="@string/transactions"
+            android:textColor="@android:color/black"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <com.zege.zegedevtest.flatui.views.FlatButton
+                android:id="@+id/button_add_new"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
                 android:layout_marginTop="10dip"
-                android:layout_marginLeft="5dip"
-                android:maxLines="1"
-                android:gravity="center_vertical"
-                android:text="@string/hello_world" 
-                android:textSize="20sp"
-                flatui:fl_textColor="fl_main"/>
+                android:drawableStart="@drawable/ic_action_new"
+                android:text="New Record"
+                android:textAlignment="center"
+                flatui:fl_backgroundColor="fl_main"
+                flatui:fl_cornerRadius="18dp"
+                flatui:fl_theme="@array/grass" />
+
+            <com.zege.zegedevtest.flatui.views.FlatButton
+                android:id="@+id/button_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dip"
+                android:drawableStart="@drawable/ic_action_refresh"
+                android:text="Sync Records"
+                flatui:fl_backgroundColor="fl_main"
+                flatui:fl_cornerRadius="18dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/searchBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home_label"
+        android:layout_marginTop="20dp" >
+
+        <com.zege.zegedevtest.flatui.views.FlatEditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_action_search"
+            android:gravity="center_vertical"
+            android:hint="Search"
+            android:includeFontPadding="true"
+            android:maxLines="1"
+            flatui:fl_cornerRadius="0dp"
+            flatui:fl_fieldStyle="fl_box" />
+    </LinearLayout>
     
+	<ListView
+        android:id="@+id/headerList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchBox"
+        android:layout_marginTop="10dip" />
+	
+    <ListView
+        android:id="@+id/transactions_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerList"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="10dip" />
+
 </RelativeLayout>

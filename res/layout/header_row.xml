@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/list_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:weightSum="4" >
+
+        <com.zege.zegedevtest.flatui.views.FlatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.38"
+            android:padding="15dip"
+            android:text="@string/id_lbl"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            flatui:fl_backgroundColor="fl_main"
+            flatui:fl_cornerRadius="0dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.02"
+            android:alpha=".45"
+            android:background="@android:color/white"
+            android:padding="15dip" />
+
+        <com.zege.zegedevtest.flatui.views.FlatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.58"
+            android:padding="15dip"
+            android:text="@string/status_lbl"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            flatui:fl_backgroundColor="fl_main"
+            flatui:fl_cornerRadius="0dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.02"
+            android:alpha=".45"
+            android:background="@android:color/white"
+            android:padding="15dip" />
+
+        <com.zege.zegedevtest.flatui.views.FlatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.98"
+            android:padding="15dip"
+            android:text="@string/details_lbl"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            flatui:fl_backgroundColor="fl_main"
+            flatui:fl_cornerRadius="0dp"
+            flatui:fl_textColor="fl_main" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.02"
+            android:alpha=".45"
+            android:background="@android:color/white"
+            android:padding="15dip" />
+
+        <com.zege.zegedevtest.flatui.views.FlatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="15dip"
+            android:text="@string/priority_lbl"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            flatui:fl_backgroundColor="fl_main"
+            flatui:fl_cornerRadius="0dp"
+            flatui:fl_textColor="fl_main" />
+    </LinearLayout>
+</RelativeLayout>

@@ -2,7 +2,13 @@
 <resources>
 
     <string name="app_name">ZegeDevTest</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="transactions">My Transactions</string>
+    <string name="details_lbl">Details</string>
+    <string name="priority_lbl">Priority</string>
+    <string name="status_lbl">Status</string>
+    <string name="id_lbl">ID</string>
+    
+    
     <string name="action_settings">Settings</string>
     
     <string-array name="themes_array">

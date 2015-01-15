@@ -7,7 +7,7 @@ import com.zege.zegedevtest.flatui.FlatUI;
 
 
 public class Constants {
-	public static final int APP_THEME = R.array.grass;
+	public static final int APP_THEME = R.array.sea;
 	
 	public static void initializeFlatUi(Context context){
 		

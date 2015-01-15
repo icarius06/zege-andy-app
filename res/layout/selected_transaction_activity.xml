@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="vertical" >
+
+            <com.zege.zegedevtest.flatui.views.FlatTextView
+                android:id="@+id/title_toggle_disabled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:gravity="center_vertical"
+                android:text="Message Sent"
+                android:textSize="16dip"
+                flatui:fl_textColor="fl_main" />
+
+            <com.zege.zegedevtest.flatui.views.FlatToggleButton
+                android:id="@+id/toggle_checked_disabled"
+                android:layout_width="72dp"
+                android:layout_height="36dp"
+                android:checked="true"
+                android:enabled="false"
+                android:text="Full Flat"
+                flatui:fl_cornerRadius="18dp"
+                flatui:fl_space="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2" >
+            
+            <com.zege.zegedevtest.flatui.views.FlatButton
+                android:id="@+id/button_flat"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:text="Edit Record"
+                flatui:fl_textAppearance="fl_light" />
+
+            <com.zege.zegedevtest.flatui.views.FlatButton
+                android:id="@+id/buttonDeleteRecord"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:text="Delete Record"
+                flatui:fl_textAppearance="fl_light"
+                flatui:fl_theme="@array/blood" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
