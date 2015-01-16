@@ -39,7 +39,11 @@ public class MainActivity extends ActionBarActivity {
 	/**
 	 * This will act as the offline data store
 	 */
+
 	private WebView webView;
+
+	private Context context;
+	ListView transactionsList;
 
 	/**
 	 * Here is the start of the app where i initialize stuff
@@ -51,13 +55,15 @@ public class MainActivity extends ActionBarActivity {
 		Constants.initializeFlatUi(this);
 
 		setContentView(R.layout.activity_main);
+		//getScreenSize();
+
+		context = this;
 
 		initializeWebView();
 
 		// initialize the list of transactions from the offline db
-		
+
 		transactionsArrayList = new ArrayList<String>();
-		
 
 		if (savedInstanceState == null) {
 			getSupportFragmentManager().beginTransaction()
@@ -70,7 +76,6 @@ public class MainActivity extends ActionBarActivity {
 	public void initializeWebView() {
 		// Step 1: Create WebView
 		webView = new WebView(this);
-		
 		// Step 2: Load html page from assets
 		webView.loadUrl("file:///android_asset/www/index.html");
 		// Step 2.1: Set custom webchrome client to allow logging
@@ -78,15 +83,15 @@ public class MainActivity extends ActionBarActivity {
 		// Step 3: Enable JavaScript
 		webView.getSettings().setJavaScriptEnabled(true);
 		// Step 4: Add our js interface for objects transfer
-		webView.addJavascriptInterface(new MainJsInterface(this),"MyAndroid");
-		
-		webView.setWebViewClient(new WebViewClient(){
-		    public void onPageFinished(WebView view, String url){   
-		    	webView.loadUrl("javascript: getAllTransactionItems	()");
-		    }           
+		webView.addJavascriptInterface(new MainJsInterface(this), "MyAndroid");
+
+		webView.setWebViewClient(new WebViewClient() {
+			public void onPageFinished(WebView view, String url) {
+				webView.loadUrl("javascript: getAllTransactionItems	()");
+			}
 		});
-		
-		Session gs =(Session)getApplication();
+
+		Session gs = (Session) getApplication();
 		gs.setWebView(webView);
 	}
 
@@ -108,19 +113,15 @@ public class MainActivity extends ActionBarActivity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
-    
-	
-    
+
 	public void addToTransactionsArrayList(TransactionModel model) {
 		transactionsArrayList.add(model.getAmount());
 	}
-    
+
 	/**
 	 * A placeholder fragment containing a simple view.
 	 */
 	public static class TransactionsHomeFragment extends Fragment {
-
-		ListView transactionsList;
 
 		public TransactionsHomeFragment() {
 		}
@@ -128,45 +129,18 @@ public class MainActivity extends ActionBarActivity {
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
+
 			View rootView = inflater.inflate(R.layout.fragment_main, container,
 					false);
 
-			FlatButton new_transactionBtn = (FlatButton) rootView.findViewById(R.id.button_add_new);
+			FlatButton new_transactionBtn = (FlatButton) rootView
+					.findViewById(R.id.button_add_new);
 			new_transactionBtn.setOnClickListener(new OnClickListener() {
 				@Override
 				public void onClick(View arg0) {
 					MainActivity activity = (MainActivity) getActivity();
-					Intent i = new Intent(activity,AddTransactionActivity.class);
-					startActivity(i);
-				}
-			});
-
-			final MainActivity activity = (MainActivity) getActivity();
-
-			ListView header = (ListView) rootView.findViewById(R.id.headerList);
-			header.setAdapter(new ListHeaderAdapter(activity));
-
-			transactionsList = (ListView) rootView
-					.findViewById(R.id.transactions_list);
-
-			final ArrayList<String> temp = activity.getTransactionsArrayList();
-
-			transactionsList.setAdapter(new LazyAdapter(activity, temp));
-			transactionsList.setOnItemClickListener(new OnItemClickListener() {
-				@Override
-				public void onItemClick(AdapterView<?> arg0, View arg1,
-						int position, long arg3) {
-					TransactionModel transactionModel = new TransactionModel();
-					transactionModel.setUnits(temp.get(position));
-					transactionModel.setMessage_status("Sent");
-					transactionModel.setAmount("1500");
-					transactionModel
-							.setParticulars("Like a tablet but different screen");
-
 					Intent i = new Intent(activity,
-							SelectedTransactionActivity.class);
-					i.putExtra("model", transactionModel);
-
+							AddTransactionActivity.class);
 					startActivity(i);
 				}
 			});
@@ -185,24 +159,76 @@ public class MainActivity extends ActionBarActivity {
 		public MainJsInterface(Context c) {
 			mContext = c;
 		}
-		
+
 		/**
-		 * Get the transactions loaded via js
-		 * an array is passed then extracted
+		 * Get the transactions loaded via js an array is passed then extracted
+		 * 
 		 * @param arr
 		 */
 		@JavascriptInterface
 		public void loadAllTransactions(String[] arr) {
-			//arr = getResources().getStringArray(R.array.themes_array);
+			// arr = getResources().getStringArray(R.array.themes_array);
 			for (int i = 0; i < arr.length; i++) {
 				if (!transactionsArrayList.contains(arr[i])) {
 					transactionsArrayList.add(arr[i]);
 				}
 			}
+						
+			runOnUiThread(new Runnable() {
+
+				@Override
+				public void run() {
+					final MainActivity activity = (MainActivity) context;
+
+					ListView header = (ListView) findViewById(R.id.headerList);
+					header.setAdapter(new ListHeaderAdapter(activity));
+
+					transactionsList = (ListView) findViewById(R.id.transactions_list);
+
+					final ArrayList<String> temp = activity
+							.getTransactionsArrayList();
+
+					transactionsList
+							.setAdapter(new LazyAdapter(activity, temp));
+					transactionsList
+							.setOnItemClickListener(new OnItemClickListener() {
+								@Override
+								public void onItemClick(AdapterView<?> arg0,
+										View arg1, int position, long arg3) {
+									TransactionModel transactionModel = new TransactionModel();
+									transactionModel.setUnits(temp
+											.get(position));
+									transactionModel.setMessage_status("Sent");
+									transactionModel.setAmount("Kes 1500");
+									transactionModel.setTran_color("Green");
+									transactionModel
+											.setParticulars("Like a tablet but different screen");
+
+									Intent i = new Intent(activity,
+											SelectedTransactionActivity.class);
+									i.putExtra("model", transactionModel);
+
+									startActivity(i);
+								}
+							});
+				}
+			});
+
 		}
 	}
 
 	public ArrayList<String> getTransactionsArrayList() {
 		return transactionsArrayList;
 	}
+/*
+	@SuppressLint("NewApi")
+	public void getScreenSize() {
+		Display display = getWindowManager().getDefaultDisplay();
+		Point size = new Point();
+		display.getSize(size);
+		int width = size.x;
+		int height = size.y;
+		String text = String.valueOf(width) + "<<" + String.valueOf(height);
+		Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
+	}*/
 }

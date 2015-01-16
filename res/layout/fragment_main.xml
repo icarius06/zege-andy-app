@@ -38,7 +38,7 @@
                 android:layout_marginRight="5dp"
                 android:layout_marginTop="10dip"
                 android:drawableStart="@drawable/ic_action_new"
-                android:text="New Record"
+                android:text="@string/new_record_lbl"
                 android:textAlignment="center"
                 flatui:fl_backgroundColor="fl_main"
                 flatui:fl_cornerRadius="18dp"
@@ -51,13 +51,12 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="10dip"
                 android:drawableStart="@drawable/ic_action_refresh"
-                android:text="Sync Records"
+                android:text="@string/sync_lbl"
                 flatui:fl_backgroundColor="fl_main"
                 flatui:fl_cornerRadius="18dp" />
 
         </LinearLayout>
     </LinearLayout>
-
     
     <LinearLayout
         android:id="@+id/searchBox"
@@ -73,7 +72,7 @@
             android:layout_weight="1"
             android:drawableStart="@drawable/ic_action_search"
             android:gravity="center_vertical"
-            android:hint="Search"
+            android:hint="@string/search_lbl"
             android:includeFontPadding="true"
             android:maxLines="1"
             flatui:fl_cornerRadius="0dp"

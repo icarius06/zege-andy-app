@@ -9,7 +9,7 @@ public class TransactionModel implements Serializable{
 	 */
 	private static final long serialVersionUID = 1L;
 
-	String	transaction_id;
+	String transaction_id;
 	String units;
 	String amount;
 	String total;

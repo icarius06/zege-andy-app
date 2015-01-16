@@ -3,18 +3,35 @@
     xmlns:flatui="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <com.zege.devtest.flatui.views.FlatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="10dip"
+        android:maxLines="1"
+        android:text="@string/transaction_details_lbl"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="vertical" >
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="2" >
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
             android:orientation="vertical" >
 
             <com.zege.devtest.flatui.views.FlatTextView
@@ -23,46 +40,207 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dip"
                 android:gravity="center_vertical"
-                android:text="Message Sent"
-                android:textSize="16dip"
+                android:text="@string/date_lbl"
+                android:textSize="18sp"
                 flatui:fl_textColor="fl_main" />
 
-            <com.zege.devtest.flatui.views.FlatToggleButton
-                android:id="@+id/toggle_checked_disabled"
-                android:layout_width="72dp"
-                android:layout_height="36dp"
-                android:checked="true"
+            <com.zege.devtest.flatui.views.FlatEditText
+                android:id="@+id/edittext_dateDisplay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
                 android:enabled="false"
-                android:text="Full Flat"
-                flatui:fl_cornerRadius="18dp"
-                flatui:fl_space="14dp" />
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:includeFontPadding="true"
+                android:maxLines="1"
+                flatui:fl_fieldStyle="fl_box" />
         </LinearLayout>
 
         <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <com.zege.devtest.flatui.views.FlatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:gravity="center_vertical"
+                android:text="@string/priority_lbl"
+                android:textSize="18sp"
+                flatui:fl_textColor="fl_main" />
+
+            <com.zege.devtest.flatui.views.FlatEditText
+                android:id="@+id/edittext_priorityDisplay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:enabled="false"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:includeFontPadding="true"
+                android:maxLines="1"
+                flatui:fl_cornerRadius="0dp"
+                flatui:fl_fieldStyle="fl_flat" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:orientation="vertical" >
+
+        <com.zege.devtest.flatui.views.FlatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:weightSum="2" >
-            
-            <com.zege.devtest.flatui.views.FlatButton
-                android:id="@+id/button_flat"
-                android:layout_width="0dp"
-                android:layout_height="45dp"
-                android:layout_margin="3dp"
-                android:layout_weight="1"
-                android:text="Edit Record"
-                flatui:fl_textAppearance="fl_light" />
+            android:layout_margin="5dip"
+            android:gravity="center_vertical"
+            android:text="@string/particulars_lbl"
+            android:textSize="18sp"
+            flatui:fl_textColor="fl_main" />
 
-            <com.zege.devtest.flatui.views.FlatButton
-                android:id="@+id/buttonDeleteRecord"
-                android:layout_width="0dp"
-                android:layout_height="45dp"
-                android:layout_margin="3dp"
-                android:layout_weight="1"
-                android:text="Delete Record"
-                flatui:fl_textAppearance="fl_light"
-                flatui:fl_theme="@array/blood" />
+        <com.zege.devtest.flatui.views.FlatEditText
+            android:id="@+id/edittext_particularsDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="5dip"
+            android:enabled="false"
+            android:focusable="false"
+            android:gravity="top"
+            android:includeFontPadding="true"
+            android:maxLines="5"
+            android:textAlignment="gravity"
+            flatui:fl_fieldStyle="fl_box" />
+    </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <com.zege.devtest.flatui.views.FlatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:gravity="center_vertical"
+                android:text="@string/amount_lbl"
+                android:textSize="18sp"
+                flatui:fl_textColor="fl_main" />
+
+            <com.zege.devtest.flatui.views.FlatEditText
+                android:id="@+id/edittext_amountDisplay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:enabled="false"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:includeFontPadding="true"
+                android:maxLines="1"
+                flatui:fl_fieldStyle="fl_box" />
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <com.zege.devtest.flatui.views.FlatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:gravity="center_vertical"
+                android:text="@string/units_lbl"
+                android:textSize="18sp"
+                flatui:fl_textColor="fl_main" />
+
+            <com.zege.devtest.flatui.views.FlatEditText
+                android:id="@+id/edittext_unitsDisplay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:enabled="false"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:includeFontPadding="true"
+                android:maxLines="1"
+                flatui:fl_fieldStyle="fl_box" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="20dp" >
+
+        <com.zege.devtest.flatui.views.FlatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:gravity="center_horizontal"
+            android:text="@string/total_lbl"
+            android:textSize="20sp"
+            flatui:fl_textColor="fl_main" />
+
+        <com.zege.devtest.flatui.views.FlatEditText
+            android:id="@+id/edittext_totalDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_margin="5dip"
+            android:enabled="false"
+            android:focusable="false"
+            android:gravity="center_horizontal"
+            android:includeFontPadding="true"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            flatui:fl_cornerRadius="0dp"
+            flatui:fl_fieldStyle="fl_box"
+            flatui:fl_theme="@array/candy" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:paddingTop="20dp"
+        android:weightSum="2" >
+
+        <com.zege.devtest.flatui.views.FlatButton
+            android:id="@+id/button_flat"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:text="@string/edit_record_lbl"
+            flatui:fl_textAppearance="fl_light" />
+
+        <com.zege.devtest.flatui.views.FlatButton
+            android:id="@+id/button_submitEdit"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:text="@string/submit_lbl"
+            flatui:fl_textAppearance="fl_light" />
     </LinearLayout>
 
 </LinearLayout>

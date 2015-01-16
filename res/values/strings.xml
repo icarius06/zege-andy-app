@@ -4,13 +4,30 @@
     <string name="app_name">ZegeDevTest</string>
     <string name="transactions">My Transactions</string>
     <string name="details_lbl">Details</string>
+    <string name="transaction_details_lbl">Transaction Details</string>
     <string name="priority_lbl">Priority</string>
     <string name="status_lbl">Status</string>
     <string name="id_lbl">ID</string>
-    
-    
+    <string name="particulars_lbl">Particulars</string>
+    <string name="total_lbl">Total</string>
+    <string name="new_record_lbl">New Record</string>
+    <string name="edit_record_lbl">Edit Record</string>
     <string name="action_settings">Settings</string>
-    
+    <string name="amount_lbl">Amount</string>
+    <string name="units_lbl">Units</string>
+    <string name="date_lbl">Date</string>
+    <string name="submit_lbl">Submit</string>
+    <string name="cancel_lbl">Cancel</string>
+    <string name="search_lbl">Search</string>
+    <string name="sync_lbl">Sync Records</string>
+    <string name="new_transaction_lbl">New Transaction</string>
+
+    <string-array name="priority_array">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+        <item>Very High</item>
+    </string-array>
     <string-array name="themes_array">
         <item>Sand</item>
         <item>Orange</item>
