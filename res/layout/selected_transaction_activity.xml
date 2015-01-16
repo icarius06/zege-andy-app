@@ -107,8 +107,6 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_margin="5dip"
-            android:enabled="false"
-            android:focusable="false"
             android:gravity="top"
             android:includeFontPadding="true"
             android:maxLines="5"
@@ -144,8 +142,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dip"
-                android:enabled="false"
-                android:focusable="false"
                 android:gravity="center_vertical"
                 android:includeFontPadding="true"
                 android:maxLines="1"
@@ -173,8 +169,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dip"
-                android:enabled="false"
-                android:focusable="false"
                 android:gravity="center_vertical"
                 android:includeFontPadding="true"
                 android:maxLines="1"
@@ -224,7 +218,7 @@
         android:weightSum="2" >
 
         <com.zege.devtest.flatui.views.FlatButton
-            android:id="@+id/button_flat"
+            android:id="@+id/button_editRecord"
             android:layout_width="0dp"
             android:layout_height="45dp"
             android:layout_margin="3dp"
@@ -238,7 +232,6 @@
             android:layout_height="45dp"
             android:layout_margin="3dp"
             android:layout_weight="1"
-            android:enabled="false"
             android:text="@string/submit_lbl"
             flatui:fl_textAppearance="fl_light" />
     </LinearLayout>

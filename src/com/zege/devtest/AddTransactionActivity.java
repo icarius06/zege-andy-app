@@ -15,7 +15,6 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
-import android.widget.Toast;
 
 import com.zege.devtest.domain.Session;
 import com.zege.devtest.flatui.FlatUI;
@@ -180,14 +179,9 @@ public class AddTransactionActivity extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				if (areEmptyFieldsHandled()) {
-					/*
-					 * webView.loadUrl("javascript:addTransaction()"); Intent i
-					 * = new
-					 * Intent(AddTransactionActivity.this,MainActivity.class);
-					 * startActivity(i); finish();
-					 */
-					Toast.makeText(AddTransactionActivity.this, "CLick",
-							Toast.LENGTH_SHORT).show();
+					webView.loadUrl("javascript:addTransaction()"); 
+					Intent i= new Intent(AddTransactionActivity.this,MainActivity.class);
+					startActivity(i); finish();
 				}
 
 			}
@@ -226,6 +220,11 @@ public class AddTransactionActivity extends Activity {
 			}
 			if (field.equals("particulars")) {
 				text_value = model.getParticulars();
+				return text_value;
+			}
+			
+			if (field.equals("priority")) {
+				text_value = model.getTran_color();
 				return text_value;
 			}
 

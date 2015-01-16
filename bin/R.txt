@@ -335,10 +335,10 @@ int id action_context_bar 0x7f05002a
 int id action_menu_divider 0x7f050016
 int id action_menu_presenter 0x7f050017
 int id action_mode_close_button 0x7f050031
-int id action_settings 0x7f0500a3
+int id action_settings 0x7f0500a4
 int id activity_chooser_view_content 0x7f050032
 int id always 0x7f05000b
-int id amount 0x7f05009a
+int id amount 0x7f050097
 int id amountEdittext_box 0x7f05004c
 int id amount_label 0x7f05004b
 int id autoCompleteTextView1 0x7f05005b
@@ -356,6 +356,7 @@ int id button_dark 0x7f050088
 int id button_dark_text 0x7f050065
 int id button_deep 0x7f050085
 int id button_ease 0x7f050067
+int id button_editRecord 0x7f0500a1
 int id button_flat 0x7f050061
 int id button_grape 0x7f050084
 int id button_grass 0x7f050087
@@ -366,7 +367,7 @@ int id button_sand 0x7f050080
 int id button_sea 0x7f05008a
 int id button_sky 0x7f050086
 int id button_snow 0x7f050089
-int id button_submitEdit 0x7f0500a1
+int id button_submitEdit 0x7f0500a2
 int id button_turquoise 0x7f05008b
 int id button_white 0x7f050064
 int id checkbox 0x7f05003a
@@ -377,7 +378,6 @@ int id checkbox_unchecked_enabled 0x7f05006b
 int id collapseActionView 0x7f05000d
 int id container 0x7f050049
 int id default_activity_button 0x7f050035
-int id description 0x7f050097
 int id dialog 0x7f05000e
 int id disableHome 0x7f050008
 int id dropdown 0x7f05000f
@@ -424,6 +424,7 @@ int id particulars 0x7f050099
 int id particularsDets 0x7f05004a
 int id particularsEdittext_box 0x7f050050
 int id particularsLabel 0x7f05004f
+int id priority 0x7f05009a
 int id priorityDets 0x7f050051
 int id priority_spinner 0x7f050053
 int id progress_circular 0x7f050018
@@ -449,7 +450,7 @@ int id shortcut 0x7f05003b
 int id showCustom 0x7f050007
 int id showHome 0x7f050004
 int id showTitle 0x7f050006
-int id spinner_button 0x7f0500a2
+int id spinner_button 0x7f0500a3
 int id split_action_bar 0x7f05002b
 int id submit_area 0x7f050046
 int id tabMode 0x7f050002

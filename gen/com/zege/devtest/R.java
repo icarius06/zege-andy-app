@@ -1309,10 +1309,10 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
         public static final int action_mode_close_button=0x7f050031;
-        public static final int action_settings=0x7f0500a3;
+        public static final int action_settings=0x7f0500a4;
         public static final int activity_chooser_view_content=0x7f050032;
         public static final int always=0x7f05000b;
-        public static final int amount=0x7f05009a;
+        public static final int amount=0x7f050097;
         public static final int amountEdittext_box=0x7f05004c;
         public static final int amount_label=0x7f05004b;
         public static final int autoCompleteTextView1=0x7f05005b;
@@ -1330,6 +1330,7 @@ containing a value of this type.
         public static final int button_dark_text=0x7f050065;
         public static final int button_deep=0x7f050085;
         public static final int button_ease=0x7f050067;
+        public static final int button_editRecord=0x7f0500a1;
         public static final int button_flat=0x7f050061;
         public static final int button_grape=0x7f050084;
         public static final int button_grass=0x7f050087;
@@ -1340,7 +1341,7 @@ containing a value of this type.
         public static final int button_sea=0x7f05008a;
         public static final int button_sky=0x7f050086;
         public static final int button_snow=0x7f050089;
-        public static final int button_submitEdit=0x7f0500a1;
+        public static final int button_submitEdit=0x7f0500a2;
         public static final int button_turquoise=0x7f05008b;
         public static final int button_white=0x7f050064;
         public static final int checkbox=0x7f05003a;
@@ -1351,7 +1352,6 @@ containing a value of this type.
         public static final int collapseActionView=0x7f05000d;
         public static final int container=0x7f050049;
         public static final int default_activity_button=0x7f050035;
-        public static final int description=0x7f050097;
         public static final int dialog=0x7f05000e;
         public static final int disableHome=0x7f050008;
         public static final int dropdown=0x7f05000f;
@@ -1398,6 +1398,7 @@ containing a value of this type.
         public static final int particularsDets=0x7f05004a;
         public static final int particularsEdittext_box=0x7f050050;
         public static final int particularsLabel=0x7f05004f;
+        public static final int priority=0x7f05009a;
         public static final int priorityDets=0x7f050051;
         public static final int priority_spinner=0x7f050053;
         public static final int progress_circular=0x7f050018;
@@ -1423,7 +1424,7 @@ containing a value of this type.
         public static final int showCustom=0x7f050007;
         public static final int showHome=0x7f050004;
         public static final int showTitle=0x7f050006;
-        public static final int spinner_button=0x7f0500a2;
+        public static final int spinner_button=0x7f0500a3;
         public static final int split_action_bar=0x7f05002b;
         public static final int submit_area=0x7f050046;
         public static final int tabMode=0x7f050002;

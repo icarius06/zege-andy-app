@@ -2,6 +2,7 @@ package com.zege.devtest.domain;
 
 import java.util.ArrayList;
 
+import android.app.Activity;
 import android.app.Application;
 import android.webkit.WebView;
 
@@ -20,7 +21,7 @@ public class Session extends Application {
 	private ArrayList<TransactionModel> transactions;
 
 	private TransactionModel current_transaction;
-
+	
 	public WebView getWebView() {
 		return webView;
 	}

@@ -6,7 +6,7 @@ import android.webkit.ConsoleMessage;
 import android.webkit.WebChromeClient;
 
 /**
- * We use this to enable logging from js console to LogCat
+ * This enables logging from Js console to LogCat
  * 
  * @author Michael
  * 

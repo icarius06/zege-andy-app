@@ -2,7 +2,11 @@ package com.zege.devtest;
 
 import java.util.ArrayList;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import android.annotation.SuppressLint;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -34,7 +38,7 @@ public class MainActivity extends ActionBarActivity {
 	/**
 	 * An array of values to be displayed on the list view
 	 */
-	private ArrayList<String> transactionsArrayList = new ArrayList<String>();
+	private ArrayList<TransactionModel> transactionsArrayList = new ArrayList<TransactionModel>();
 
 	/**
 	 * This will act as the offline data store
@@ -45,6 +49,7 @@ public class MainActivity extends ActionBarActivity {
 	private Context context;
 	ListView transactionsList;
 
+	ProgressDialog pleaseWait;
 	/**
 	 * Here is the start of the app where i initialize stuff
 	 */
@@ -63,13 +68,16 @@ public class MainActivity extends ActionBarActivity {
 
 		// initialize the list of transactions from the offline db
 
-		transactionsArrayList = new ArrayList<String>();
+		transactionsArrayList = new ArrayList<TransactionModel>();
 
 		if (savedInstanceState == null) {
 			getSupportFragmentManager().beginTransaction()
 					.add(R.id.container, new TransactionsHomeFragment())
 					.commit();
 		}
+		pleaseWait = new ProgressDialog(this);
+		pleaseWait .setMessage("Please wait ...");
+		pleaseWait.show();
 	}
 
 	@SuppressLint({ "JavascriptInterface", "SetJavaScriptEnabled" })
@@ -115,7 +123,7 @@ public class MainActivity extends ActionBarActivity {
 	}
 
 	public void addToTransactionsArrayList(TransactionModel model) {
-		transactionsArrayList.add(model.getAmount());
+		transactionsArrayList.add(model);
 	}
 
 	/**
@@ -167,11 +175,13 @@ public class MainActivity extends ActionBarActivity {
 		 */
 		@JavascriptInterface
 		public void loadAllTransactions(String[] arr) {
+			
 			// arr = getResources().getStringArray(R.array.themes_array);
 			for (int i = 0; i < arr.length; i++) {
-				if (!transactionsArrayList.contains(arr[i])) {
-					transactionsArrayList.add(arr[i]);
-				}
+				//if (!transactionsArrayList.contains(arr[i])) {
+					TransactionModel model = getModelFromString(arr[i]);
+					transactionsArrayList.add(model);
+				//}
 			}
 						
 			runOnUiThread(new Runnable() {
@@ -185,7 +195,7 @@ public class MainActivity extends ActionBarActivity {
 
 					transactionsList = (ListView) findViewById(R.id.transactions_list);
 
-					final ArrayList<String> temp = activity
+					final ArrayList<TransactionModel> temp = activity
 							.getTransactionsArrayList();
 
 					transactionsList
@@ -193,31 +203,44 @@ public class MainActivity extends ActionBarActivity {
 					transactionsList
 							.setOnItemClickListener(new OnItemClickListener() {
 								@Override
-								public void onItemClick(AdapterView<?> arg0,
-										View arg1, int position, long arg3) {
+								public void onItemClick(AdapterView<?> arg0,View arg1, int position, long arg3) {
 									TransactionModel transactionModel = new TransactionModel();
-									transactionModel.setUnits(temp
-											.get(position));
+									transactionModel.setUnits(temp.get(position).getUnits());
 									transactionModel.setMessage_status("Sent");
-									transactionModel.setAmount("Kes 1500");
-									transactionModel.setTran_color("Green");
-									transactionModel
-											.setParticulars("Like a tablet but different screen");
-
-									Intent i = new Intent(activity,
-											SelectedTransactionActivity.class);
+									transactionModel.setAmount(temp.get(position).getAmount());
+									transactionModel.setTran_color(temp.get(position).getTran_color());
+									transactionModel.setParticulars(temp.get(position).getParticulars());
+									transactionModel.setCreated_date_time(temp.get(position).getCreated_date_time());
+									
+									Intent i = new Intent(activity,SelectedTransactionActivity.class);
 									i.putExtra("model", transactionModel);
 
 									startActivity(i);
 								}
 							});
+					pleaseWait.dismiss();
 				}
 			});
 
 		}
+
+		private TransactionModel getModelFromString(String stringFromJS) {
+
+			TransactionModel model =new TransactionModel();
+			try{
+				JSONObject jsonObject =new JSONObject(stringFromJS);
+				model.setAmount(jsonObject.getString("amount"));
+				model.setParticulars(jsonObject.getString("particulars"));
+				model.setUnits(jsonObject.getString("units"));
+				model.setTran_color(jsonObject.getString("priority"));
+				if(jsonObject.getString("timeStamp")!=null)
+				model.setCreated_date_time(jsonObject.getString("timeStamp"));
+			}catch(JSONException e){}
+			return model;
+		}
 	}
 
-	public ArrayList<String> getTransactionsArrayList() {
+	public ArrayList<TransactionModel> getTransactionsArrayList() {
 		return transactionsArrayList;
 	}
 /*

@@ -67,8 +67,9 @@ var getAllTransactionItems = function () {
     var arr = [];
     
     for (var i = 0; i < n; i++) {
-      arr.push(items[i].units);
+      	arr.push("{'units':"+items[i].units+",'timeStamp':"+items[i].timeStamp+",'amount':"+items[i].amount+",'particulars':"+items[i].particulars+",'priority':"+items[i].priority+"}");
     }
+    
     MyAndroid.loadAllTransactions(arr);
   });
 
@@ -80,11 +81,15 @@ var getAllTransactionItems = function () {
 var addTransaction = function () {
   var units = MyAndroid2.getTextValuesFor('units');
   var amount = MyAndroid2.getTextValuesFor('amount');
+  var particulars = MyAndroid2.getTextValuesFor('particulars');
+  var priority = MyAndroid2.getTextValuesFor('priority');
   
   var data = {
     "units":units,
     "amount":amount,
-    "timeStamp":new Date().getTime()
+    "timeStamp":new Date().getTime(),
+    "particulars":particulars,
+    "priority":priority
   };
   
   db.put('transaction', data).fail(function(e) {
