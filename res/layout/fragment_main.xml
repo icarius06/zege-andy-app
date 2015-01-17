@@ -54,22 +54,22 @@
                 android:text="@string/sync_lbl"
                 flatui:fl_backgroundColor="fl_main"
                 flatui:fl_cornerRadius="18dp" />
-
         </LinearLayout>
     </LinearLayout>
-    
+
     <LinearLayout
         android:id="@+id/searchBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/home_label"
-        android:layout_marginTop="20dp" >
+        android:layout_marginTop="20dp"
+        android:weightSum="1" >
 
         <com.zege.devtest.flatui.views.FlatEditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="5dip"
-            android:layout_weight="1"
+            android:layout_weight="0.9"
             android:drawableStart="@drawable/ic_action_search"
             android:gravity="center_vertical"
             android:hint="@string/search_lbl"
@@ -77,15 +77,24 @@
             android:maxLines="1"
             flatui:fl_cornerRadius="0dp"
             flatui:fl_fieldStyle="fl_box" />
+
+        <com.zege.devtest.flatui.views.FlatButton
+            android:id="@+id/button_filter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_weight="0.1"
+            android:drawableLeft="@drawable/ic_action_filter"
+            flatui:fl_cornerRadius="0dp"/>
     </LinearLayout>
-    
-	<ListView
+
+    <ListView
         android:id="@+id/headerList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/searchBox"
         android:layout_marginTop="10dip" />
-	
+
     <ListView
         android:id="@+id/transactions_list"
         android:layout_width="match_parent"

@@ -12,6 +12,7 @@
     <string name="total_lbl">Total</string>
     <string name="new_record_lbl">New Record</string>
     <string name="edit_record_lbl">Edit Record</string>
+    <string name="delete_record_lbl">Delete Record</string>
     <string name="action_settings">Settings</string>
     <string name="amount_lbl">Amount</string>
     <string name="units_lbl">Units</string>
@@ -20,6 +21,7 @@
     <string name="cancel_lbl">Cancel</string>
     <string name="search_lbl">Search</string>
     <string name="sync_lbl">Sync Records</string>
+    <string name="message_status_lbl">Message Status</string>
     <string name="new_transaction_lbl">New Transaction</string>
 
     <string-array name="priority_array">
@@ -28,6 +30,20 @@
         <item>High</item>
         <item>Very High</item>
     </string-array>
+    
+    <string-array name="message_status_array">
+        <item>SMS sent</item>
+        <item>SMS not sent </item>
+    </string-array>
+    
+    <string-array name="filter_fields_array">
+        <item>Priority</item>
+        <item>Message Status</item>
+        <item>Time Period</item>
+    </string-array>
+    
+    
+    
     <string-array name="themes_array">
         <item>Sand</item>
         <item>Orange</item>

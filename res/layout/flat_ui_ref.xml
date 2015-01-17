@@ -582,8 +582,8 @@
                             android:layout_width="72dp"
                             android:layout_height="36dp"
                             android:text="Full Flat"
-                            flatui:fl_space="14dp"
-                            flatui:fl_cornerRadius="18dp" />
+                            flatui:fl_cornerRadius="18dp"
+                            flatui:fl_space="14dp" />
 
                         <com.zege.devtest.flatui.views.FlatToggleButton
                             android:id="@+id/toggle_checked_enabled"

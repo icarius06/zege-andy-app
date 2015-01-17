@@ -180,8 +180,7 @@ public class AddTransactionActivity extends Activity {
 			public void onClick(View arg0) {
 				if (areEmptyFieldsHandled()) {
 					webView.loadUrl("javascript:addTransaction()"); 
-					Intent i= new Intent(AddTransactionActivity.this,MainActivity.class);
-					startActivity(i); finish();
+					finish();
 				}
 
 			}

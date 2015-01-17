@@ -24,15 +24,17 @@ public final class R {
         public static final int custom_theme_2=0x7f0c0001;
         public static final int dark=0x7f0c000a;
         public static final int deep=0x7f0c0007;
+        public static final int filter_fields_array=0x7f0c0010;
         public static final int grape=0x7f0c0006;
         public static final int grass=0x7f0c0009;
+        public static final int message_status_array=0x7f0c000f;
         public static final int orange=0x7f0c0003;
         public static final int priority_array=0x7f0c000e;
         public static final int sand=0x7f0c0002;
         public static final int sea=0x7f0c000c;
         public static final int sky=0x7f0c0008;
         public static final int snow=0x7f0c000b;
-        public static final int themes_array=0x7f0c000f;
+        public static final int themes_array=0x7f0c0011;
     }
     public static final class attr {
         /**  Custom divider drawable to use for elements in the action bar. 
@@ -1287,15 +1289,16 @@ containing a value of this type.
         public static final int abc_textfield_searchview_holo_light=0x7f020054;
         public static final int abc_textfield_searchview_right_holo_dark=0x7f020055;
         public static final int abc_textfield_searchview_right_holo_light=0x7f020056;
-        public static final int ic_action_high=0x7f020057;
-        public static final int ic_action_low=0x7f020058;
-        public static final int ic_action_medium=0x7f020059;
-        public static final int ic_action_new=0x7f02005a;
-        public static final int ic_action_refresh=0x7f02005b;
-        public static final int ic_action_remove=0x7f02005c;
-        public static final int ic_action_search=0x7f02005d;
-        public static final int ic_action_very_high=0x7f02005e;
-        public static final int ic_launcher=0x7f02005f;
+        public static final int ic_action_filter=0x7f020057;
+        public static final int ic_action_high=0x7f020058;
+        public static final int ic_action_low=0x7f020059;
+        public static final int ic_action_medium=0x7f02005a;
+        public static final int ic_action_new=0x7f02005b;
+        public static final int ic_action_refresh=0x7f02005c;
+        public static final int ic_action_remove=0x7f02005d;
+        public static final int ic_action_search=0x7f02005e;
+        public static final int ic_action_very_high=0x7f02005f;
+        public static final int ic_launcher=0x7f020060;
     }
     public static final class id {
         public static final int action_bar=0x7f050029;
@@ -1309,10 +1312,10 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
         public static final int action_mode_close_button=0x7f050031;
-        public static final int action_settings=0x7f0500a4;
+        public static final int action_settings=0x7f0500a7;
         public static final int activity_chooser_view_content=0x7f050032;
         public static final int always=0x7f05000b;
-        public static final int amount=0x7f050097;
+        public static final int amount=0x7f050098;
         public static final int amountEdittext_box=0x7f05004c;
         public static final int amount_label=0x7f05004b;
         public static final int autoCompleteTextView1=0x7f05005b;
@@ -1329,8 +1332,10 @@ containing a value of this type.
         public static final int button_dark=0x7f050088;
         public static final int button_dark_text=0x7f050065;
         public static final int button_deep=0x7f050085;
+        public static final int button_deleteRecord=0x7f0500a5;
         public static final int button_ease=0x7f050067;
-        public static final int button_editRecord=0x7f0500a1;
+        public static final int button_editRecord=0x7f0500a3;
+        public static final int button_filter=0x7f050092;
         public static final int button_flat=0x7f050061;
         public static final int button_grape=0x7f050084;
         public static final int button_grass=0x7f050087;
@@ -1341,7 +1346,7 @@ containing a value of this type.
         public static final int button_sea=0x7f05008a;
         public static final int button_sky=0x7f050086;
         public static final int button_snow=0x7f050089;
-        public static final int button_submitEdit=0x7f0500a2;
+        public static final int button_submitEdit=0x7f0500a4;
         public static final int button_turquoise=0x7f05008b;
         public static final int button_white=0x7f050064;
         public static final int checkbox=0x7f05003a;
@@ -1356,16 +1361,17 @@ containing a value of this type.
         public static final int disableHome=0x7f050008;
         public static final int dropdown=0x7f05000f;
         public static final int edit_query=0x7f05003d;
-        public static final int edittext_amountDisplay=0x7f05009e;
+        public static final int edittext_amountDisplay=0x7f0500a0;
         public static final int edittext_box=0x7f050058;
-        public static final int edittext_dateDisplay=0x7f05009b;
+        public static final int edittext_dateDisplay=0x7f05009d;
         public static final int edittext_flat=0x7f050057;
-        public static final int edittext_particularsDisplay=0x7f05009d;
-        public static final int edittext_priorityDisplay=0x7f05009c;
-        public static final int edittext_totalDisplay=0x7f0500a0;
+        public static final int edittext_msgStatusDisplay=0x7f05009c;
+        public static final int edittext_particularsDisplay=0x7f05009f;
+        public static final int edittext_priorityDisplay=0x7f05009e;
+        public static final int edittext_totalDisplay=0x7f0500a2;
         public static final int edittext_transparent=0x7f05005a;
         public static final int edittext_transparentbox=0x7f050059;
-        public static final int edittext_unitsDisplay=0x7f05009f;
+        public static final int edittext_unitsDisplay=0x7f0500a1;
         public static final int end=0x7f050013;
         public static final int expand_activities_button=0x7f050033;
         public static final int expanded_menu=0x7f050039;
@@ -1380,7 +1386,7 @@ containing a value of this type.
         public static final int fl_ripple=0x7f05001e;
         public static final int fl_transparent=0x7f050021;
         public static final int flat=0x7f050022;
-        public static final int headerList=0x7f050092;
+        public static final int headerList=0x7f050093;
         public static final int home=0x7f050014;
         public static final int homeAsUp=0x7f050005;
         public static final int home_label=0x7f05008f;
@@ -1388,17 +1394,17 @@ containing a value of this type.
         public static final int ifRoom=0x7f05000a;
         public static final int image=0x7f050034;
         public static final int listMode=0x7f050001;
-        public static final int list_header=0x7f050094;
+        public static final int list_header=0x7f050095;
         public static final int list_item=0x7f050036;
         public static final int middle=0x7f050012;
         public static final int never=0x7f050009;
         public static final int none=0x7f050010;
         public static final int normal=0x7f050000;
-        public static final int particulars=0x7f050099;
+        public static final int particulars=0x7f05009a;
         public static final int particularsDets=0x7f05004a;
         public static final int particularsEdittext_box=0x7f050050;
         public static final int particularsLabel=0x7f05004f;
-        public static final int priority=0x7f05009a;
+        public static final int priority=0x7f05009b;
         public static final int priorityDets=0x7f050051;
         public static final int priority_spinner=0x7f050053;
         public static final int progress_circular=0x7f050018;
@@ -1424,7 +1430,7 @@ containing a value of this type.
         public static final int showCustom=0x7f050007;
         public static final int showHome=0x7f050004;
         public static final int showTitle=0x7f050006;
-        public static final int spinner_button=0x7f0500a3;
+        public static final int spinner_button=0x7f0500a6;
         public static final int split_action_bar=0x7f05002b;
         public static final int submit_area=0x7f050046;
         public static final int tabMode=0x7f050002;
@@ -1453,11 +1459,11 @@ containing a value of this type.
         public static final int toggle_unchecked_disabled=0x7f05007c;
         public static final int toggle_unchecked_enabled=0x7f050079;
         public static final int top_action_bar=0x7f05002d;
-        public static final int trans_status=0x7f050096;
-        public static final int transaction_id=0x7f050095;
-        public static final int transactions_list=0x7f050093;
+        public static final int trans_status=0x7f050097;
+        public static final int transaction_id=0x7f050096;
+        public static final int transactions_list=0x7f050094;
         public static final int transparent=0x7f050024;
-        public static final int units=0x7f050098;
+        public static final int units=0x7f050099;
         public static final int unitsEdittext_box=0x7f05004e;
         public static final int unitsLabel=0x7f05004d;
         public static final int up=0x7f05002e;
@@ -1568,26 +1574,28 @@ containing a value of this type.
         /**  Description of a share target (both in the list of such or the default share button) in a ShareActionProvider (share UI). [CHAR LIMIT=NONE] 
          */
         public static final int abc_shareactionprovider_share_with_application=0x7f0a000b;
-        public static final int action_settings=0x7f0a0018;
-        public static final int amount_lbl=0x7f0a0019;
+        public static final int action_settings=0x7f0a0019;
+        public static final int amount_lbl=0x7f0a001a;
         public static final int app_name=0x7f0a000d;
-        public static final int cancel_lbl=0x7f0a001d;
-        public static final int date_lbl=0x7f0a001b;
+        public static final int cancel_lbl=0x7f0a001e;
+        public static final int date_lbl=0x7f0a001c;
+        public static final int delete_record_lbl=0x7f0a0018;
         public static final int details_lbl=0x7f0a000f;
         public static final int edit_record_lbl=0x7f0a0017;
         public static final int id_lbl=0x7f0a0013;
+        public static final int message_status_lbl=0x7f0a0021;
         public static final int new_record_lbl=0x7f0a0016;
-        public static final int new_transaction_lbl=0x7f0a0020;
+        public static final int new_transaction_lbl=0x7f0a0022;
         public static final int particulars_lbl=0x7f0a0014;
         public static final int priority_lbl=0x7f0a0011;
-        public static final int search_lbl=0x7f0a001e;
+        public static final int search_lbl=0x7f0a001f;
         public static final int status_lbl=0x7f0a0012;
-        public static final int submit_lbl=0x7f0a001c;
-        public static final int sync_lbl=0x7f0a001f;
+        public static final int submit_lbl=0x7f0a001d;
+        public static final int sync_lbl=0x7f0a0020;
         public static final int total_lbl=0x7f0a0015;
         public static final int transaction_details_lbl=0x7f0a0010;
         public static final int transactions=0x7f0a000e;
-        public static final int units_lbl=0x7f0a001a;
+        public static final int units_lbl=0x7f0a001b;
     }
     public static final class style {
         /** 

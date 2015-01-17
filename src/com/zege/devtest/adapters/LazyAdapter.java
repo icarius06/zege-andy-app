@@ -72,11 +72,11 @@ public class LazyAdapter extends BaseAdapter {
         			priority.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_action_high, 0, 0, 0);
         		}
         		if(data.get(position).getTran_color().equals("Green")){
-        			priority.setText("Very High");
+        			priority.setText("Medium");
         			priority.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_action_medium, 0, 0, 0);
         		}
         		if(data.get(position).getTran_color().equals("Yellow")){
-        			priority.setText("High");
+        			priority.setText("Low");
         			priority.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_action_low, 0, 0, 0);
         		}
         	}
