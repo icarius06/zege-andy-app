@@ -24,7 +24,6 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebView;
-import android.webkit.WebViewClient;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView.OnItemSelectedListener;
@@ -67,15 +66,12 @@ public class MainActivity extends ActionBarActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-
 		Constants.initializeFlatUi(this);
-
 		setContentView(R.layout.activity_main);
 		// getScreenSize();
 
-		initializeWebView();
-
 		// initialize the list of transactions from the offline db
+		initializeWebView();
 
 		transactionsArrayList = new ArrayList<TransactionModel>();
 
@@ -94,8 +90,17 @@ public class MainActivity extends ActionBarActivity {
 	 */
 	@SuppressLint({ "JavascriptInterface", "SetJavaScriptEnabled" })
 	public void initializeWebView() {
+
+		// Pass the web view across the app
+		Session gs = (Session) getApplication();
+
 		// Step 1: Create WebView
-		webView = new WebView(this);
+		if (gs.getWebView() == null) {
+			webView = new WebView(this);
+			gs.setWebView(webView);
+		} else {
+			webView = gs.getWebView();
+		}
 		// Step 2: Load html page from assets
 		webView.loadUrl("file:///android_asset/www/index.html");
 		// Step 2.1: Set custom webchrome client to allow logging
@@ -105,15 +110,12 @@ public class MainActivity extends ActionBarActivity {
 		// Step 4: Add our js interface for objects transfer
 		webView.addJavascriptInterface(new MainJsInterface(this), "MyAndroid");
 
-		webView.setWebViewClient(new WebViewClient() {
-			public void onPageFinished(WebView view, String url) {
-				webView.loadUrl("javascript: getAllTransactionItems	()");
-			}
-		});
+		// webView.setWebViewClient(new WebViewClient() {
+		// public void onPageFinished(WebView view, String url) {
+		// //webView.loadUrl("javascript: getAllTransactionItems	()");
+		// }
+		// });
 
-		// Pass the web view across the app
-		Session gs = (Session) getApplication();
-		gs.setWebView(webView);
 	}
 
 	// Menu stuff
@@ -148,7 +150,8 @@ public class MainActivity extends ActionBarActivity {
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
 
-			View rootView = inflater.inflate(R.layout.fragment_main, container,false);
+			View rootView = inflater.inflate(R.layout.fragment_main, container,
+					false);
 
 			initializeButtons(rootView);
 
@@ -162,12 +165,14 @@ public class MainActivity extends ActionBarActivity {
 				@Override
 				public void onClick(View arg0) {
 					MainActivity activity = (MainActivity) getActivity();
-					Intent i = new Intent(activity,AddTransactionActivity.class);
+					Intent i = new Intent(activity,
+							AddTransactionActivity.class);
 					startActivity(i);
 				}
 			});
 
-			FlatButton filterBtn = (FlatButton) rootView.findViewById(R.id.button_filter);
+			FlatButton filterBtn = (FlatButton) rootView
+					.findViewById(R.id.button_filter);
 			filterBtn.setOnClickListener(new OnClickListener() {
 				@Override
 				public void onClick(View arg0) {
@@ -216,13 +221,15 @@ public class MainActivity extends ActionBarActivity {
 							switch (position) {
 							case 0:
 								valuesSpinner.setVisibility(View.VISIBLE);
-								valuesSpinner.setAdapter(ArrayAdapter.createFromResource(getActivity(),
+								valuesSpinner.setAdapter(ArrayAdapter
+										.createFromResource(getActivity(),
 												R.array.priority_array,
 												R.layout.spinner_button));
 								break;
 							case 1:
 								valuesSpinner.setVisibility(View.VISIBLE);
-								valuesSpinner.setAdapter(ArrayAdapter.createFromResource(getActivity(),
+								valuesSpinner.setAdapter(ArrayAdapter
+										.createFromResource(getActivity(),
 												R.array.message_status_array,
 												R.layout.spinner_button));
 								break;
@@ -249,6 +256,7 @@ public class MainActivity extends ActionBarActivity {
 					layout.addView(spinner);
 					layout.addView(valuesSpinner);
 					alert.setView(layout);
+
 					alert.setPositiveButton("OK",
 							new DialogInterface.OnClickListener() {
 								public void onClick(DialogInterface dialog,
@@ -279,7 +287,7 @@ public class MainActivity extends ActionBarActivity {
 	public class MainJsInterface {
 
 		private Context mContext;
-		
+
 		public MainJsInterface(Context c) {
 			mContext = c;
 		}
@@ -291,11 +299,12 @@ public class MainActivity extends ActionBarActivity {
 		 */
 		@JavascriptInterface
 		public void loadAllTransactions(String[] arr) {
+			transactionsArrayList.clear();
 			for (int i = 0; i < arr.length; i++) {
-				 TransactionModel model = getModelFromString(arr[i]);
-				 if (!transactionsArrayList.contains(model)) {
-					 transactionsArrayList.add(model);
-				 }
+				TransactionModel model = getModelFromString(arr[i]);
+				if (!transactionsArrayList.contains(model)) {
+					transactionsArrayList.add(model);
+				}
 			}
 
 			runOnUiThread(new Runnable() {
@@ -308,22 +317,31 @@ public class MainActivity extends ActionBarActivity {
 
 					transactionsList = (ListView) findViewById(R.id.transactions_list);
 
-					final ArrayList<TransactionModel> temp = activity.getTransactionsArrayList();
+					final ArrayList<TransactionModel> temp = activity
+							.getTransactionsArrayList();
 
-					transactionsList.setAdapter(new LazyAdapter(activity, temp));
-					transactionsList.setOnItemClickListener(new OnItemClickListener() {
+					transactionsList
+							.setAdapter(new LazyAdapter(activity, temp));
+					transactionsList
+							.setOnItemClickListener(new OnItemClickListener() {
 								@Override
-								public void onItemClick(AdapterView<?> arg0,View arg1, int position, long arg3) {
+								public void onItemClick(AdapterView<?> arg0,
+										View arg1, int position, long arg3) {
 									TransactionModel transactionModel = new TransactionModel();
-									transactionModel.setUnits(temp.get(position).getUnits());
+									transactionModel.setUnits(temp
+											.get(position).getUnits());
 									transactionModel.setMessage_status("Sent");
-									transactionModel.setAmount(temp.get(position).getAmount());
+									transactionModel.setAmount(temp.get(
+											position).getAmount());
 									transactionModel.setTran_color(temp.get(
 											position).getTran_color());
 									transactionModel.setParticulars(temp.get(
 											position).getParticulars());
-									transactionModel.setCreated_date_time(temp.get(position).getCreated_date_time());
-									Intent i = new Intent(activity,SelectedTransactionActivity.class);
+									transactionModel.setCreated_date_time(temp
+											.get(position)
+											.getCreated_date_time());
+									Intent i = new Intent(activity,
+											SelectedTransactionActivity.class);
 									i.putExtra("model", transactionModel);
 									startActivity(i);
 								}

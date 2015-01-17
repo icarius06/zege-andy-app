@@ -1,14 +1,18 @@
 package com.zege.devtest;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.webkit.WebView;
 
+import com.zege.devtest.domain.Session;
 import com.zege.devtest.flatui.FlatUI;
 import com.zege.devtest.flatui.views.FlatButton;
 import com.zege.devtest.flatui.views.FlatEditText;
+import com.zege.devtest.logger.CustomLoggerClient;
 import com.zege.devtest.models.TransactionModel;
 import com.zege.devtest.utils.Constants;
 
@@ -16,8 +20,10 @@ public class SelectedTransactionActivity extends Activity {
 
 	private TransactionModel model;
 	private FlatEditText amountEditText,unitsEditText,particularsEditText ;
-	FlatButton button_editRecord,button_submitEdit;
+	private FlatButton button_editRecord,button_submitEdit,button_deleteRecord;
 
+	private WebView webView;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -29,6 +35,7 @@ public class SelectedTransactionActivity extends Activity {
 		
 		model = (TransactionModel) i.getExtras().get("model");
 		
+		initializeWebView();
 		
 		button_submitEdit = (FlatButton)findViewById(R.id.button_submitEdit);
 		button_submitEdit.setOnClickListener(new OnClickListener() {
@@ -47,7 +54,30 @@ public class SelectedTransactionActivity extends Activity {
 				enableViews(true);
 			}
 		});
+		
+		button_deleteRecord = (FlatButton)findViewById(R.id.button_deleteRecord);
+		button_deleteRecord.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				//Toast.makeText(SelectedTransactionActivity.this,model.getCreated_date_time() , Toast.LENGTH_SHORT).show();
+				webView.loadUrl("javascript:deleteTransaction("+model.getCreated_date_time()+")"); 
+				finish();
+			}
+		});
+				
 		initializeViews();
+	}
+	
+	@SuppressLint("SetJavaScriptEnabled") 
+	public void initializeWebView() {
+		Session gs = (Session) getApplication();
+		webView = gs.getWebView();
+		webView.loadUrl("file:///android_asset/www/index.html");
+		// Step 2.1: Set custom webchrome client to allow logging
+		webView.setWebChromeClient(new CustomLoggerClient());
+		// Step 3: Enable JavaScript
+		webView.getSettings().setJavaScriptEnabled(true);
 	}
 	
 	/**

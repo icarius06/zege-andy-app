@@ -3,16 +3,12 @@ ydn.debug.log('ydn.db', 'finest', document.getElementById('debug-console'));
 var transactionsSchema = {
 	name: "transaction",
 	keyPath: "timeStamp",
-	indexes: [{
-	    	name: "timeStamp",
-	    	unique: true
-		}, {
-	    	name: "units",
-	    	unique: false
-		}, {
-	 	    name: "amount",
-	    	unique: false
-		}]
+	indexes: [
+				{
+	    			name: "timeStamp",
+	    			unique: true
+				}
+			 ]
 };
 
 var schema = {
@@ -45,21 +41,6 @@ var deleteTransaction = function (id) {
   getAllTransactionItems();
 };
 
-var deleteTransactionByUnits = function(units) {
-		var df = db.values('transaction');
-  		df.done(function (items) {  		
-    	  var n = items.length;
-    	  for (var i = 0; i < n; i++) {
-    	  		if(items[i].units==units){
-    	  			db.remove('transaction', items[i].timeStamp).fail(function(e) {
-			    		throw e;
-			    	});
-    	  		}
-    	  }
-    	});
-    	getAllTransactionItems();
-}
-
 var getAllTransactionItems = function () {
   var df = db.values('transaction');
   df.done(function (items) {
@@ -67,9 +48,9 @@ var getAllTransactionItems = function () {
     var arr = [];
     
     for (var i = 0; i < n; i++) {
-      	arr.push("{'units':"+items[i].units+",'timeStamp':"+items[i].timeStamp+",'amount':"+items[i].amount+",'particulars':"+items[i].particulars+",'priority':"+items[i].priority+"}");
+    	var toAdd ="{'units':"+items[i].units+",'timeStamp':"+items[i].timeStamp+",'amount':"+items[i].amount+",'particulars':"+items[i].particulars+",'priority':"+items[i].priority+"}";
+    	arr.push(toAdd);    	
     }
-    
     MyAndroid.loadAllTransactions(arr);
   });
 
@@ -99,22 +80,6 @@ var addTransaction = function () {
   getAllTransactionItems();
 };
 
-var renderTransaction = function (row) {
-  var transactions = document.getElementById("transactionItems");
-  var li = document.createElement("li");
-  var a = document.createElement("a");
-  var t = document.createTextNode(row.units);
-
-  a.addEventListener("click", function () {
-    deleteTransaction(row.timeStamp);
-  }, false);
-
-  a.textContent = " [Delete]";
-  li.appendChild(t);
-  li.appendChild(a);
-  transactions.appendChild(li)
-};
-
 function init() {
   getAllTransactionItems();
 
@@ -123,6 +88,7 @@ function init() {
   });
 
   document.addEventListener('resume', function() {
+  alert("tests");
     db = new ydn.db.Storage(db_name, schema);
   });
 }

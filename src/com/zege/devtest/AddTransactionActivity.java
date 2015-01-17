@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -118,9 +117,7 @@ public class AddTransactionActivity extends Activity {
 		// Step 3: Enable JavaScript
 		webView.getSettings().setJavaScriptEnabled(true);
 		// Step 4: Add our js interface for objects transfer
-		webView.addJavascriptInterface(new AddTransactionJsInterface(this),
-				"MyAndroid2");
-
+		webView.addJavascriptInterface(new AddTransactionJsInterface(this),"MyAndroid2");
 	}
 
 	public TransactionModel getModelFromInput() {

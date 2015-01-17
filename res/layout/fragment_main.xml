@@ -85,7 +85,7 @@
             android:layout_margin="5dip"
             android:layout_weight="0.1"
             android:drawableLeft="@drawable/ic_action_filter"
-            flatui:fl_cornerRadius="0dp"/>
+            flatui:fl_cornerRadius="0dp" />
     </LinearLayout>
 
     <ListView
@@ -102,5 +102,11 @@
         android:layout_below="@+id/headerList"
         android:layout_marginBottom="10dip"
         android:layout_marginTop="10dip" />
+
+    <WebView
+        android:id="@+id/myBrowser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
 
 </RelativeLayout>
