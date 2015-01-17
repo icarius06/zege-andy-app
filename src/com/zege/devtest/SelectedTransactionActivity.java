@@ -2,6 +2,8 @@ package com.zege.devtest;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -60,9 +62,28 @@ public class SelectedTransactionActivity extends Activity {
 			
 			@Override
 			public void onClick(View arg0) {
-				//Toast.makeText(SelectedTransactionActivity.this,model.getCreated_date_time() , Toast.LENGTH_SHORT).show();
-				webView.loadUrl("javascript:deleteTransaction("+model.getCreated_date_time()+")"); 
-				finish();
+				
+				AlertDialog.Builder alert = new AlertDialog.Builder(SelectedTransactionActivity.this);
+				alert.setTitle("Are you sure?"); 
+				alert.setPositiveButton("YES",new DialogInterface.OnClickListener() {
+					public void onClick(DialogInterface dialog,int whichButton) {
+						//Toast.makeText(SelectedTransactionActivity.this,model.getCreated_date_time() , Toast.LENGTH_SHORT).show();
+						webView.loadUrl("javascript:deleteTransaction("+model.getCreated_date_time()+")"); 
+						finish();
+					}
+				});
+				// End of alert.setPositiveButton
+				alert.setNegativeButton("CANCEL",new DialogInterface.OnClickListener() {
+							public void onClick(DialogInterface dialog,int whichButton) {
+								// Canceled.
+								dialog.cancel();
+							}
+					}); // End of alert.setNegativeButton
+				
+				AlertDialog alertDialog = alert.create();
+				alertDialog.show();
+				
+				
 			}
 		});
 				
@@ -112,6 +133,9 @@ public class SelectedTransactionActivity extends Activity {
 		particularsEditText = (FlatEditText) findViewById(R.id.edittext_particularsDisplay);
 		particularsEditText.setText(model.getParticulars());
 
+		FlatEditText  msgStatusEditText= (FlatEditText)findViewById(R.id.edittext_msgStatusDisplay);
+		msgStatusEditText.setText("SMS Sent/SMS not sent");
+		
 		//Dont need to enable these ones
 		FlatEditText priorityEditText = (FlatEditText) findViewById(R.id.edittext_priorityDisplay);
 		if(model.getTran_color()!=null){

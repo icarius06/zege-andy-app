@@ -5,6 +5,7 @@
     android:versionName="1.0" >
 
     <uses-permission android:name="android.permission.INTERNET" />
+
     <uses-sdk
         android:minSdkVersion="11"
         android:targetSdkVersion="19" />
@@ -24,16 +25,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.zege.devtest.SelectedTransactionActivity">
+        <activity android:name="com.zege.devtest.SelectedTransactionActivity" >
         </activity>
-        
-        <activity
-            android:name="com.zege.devtest.AddTransactionActivity">
-        </activity>
-        
-        <activity
-            android:name="com.zege.devtest.FlatUIRef">
+        <activity android:name="com.zege.devtest.AddTransactionActivity" >
         </activity>
     </application>
 

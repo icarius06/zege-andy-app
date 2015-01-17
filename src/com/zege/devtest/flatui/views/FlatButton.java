@@ -63,7 +63,8 @@ public class FlatButton extends Button implements Attributes.AttributeChangeList
         super.onDraw(canvas);
     }
 
-    private void init(AttributeSet attrs) {
+    @SuppressWarnings("deprecation")
+	private void init(AttributeSet attrs) {
 
         // saving padding values for using them after setting background drawable
         final int paddingTop = getPaddingTop();

@@ -4,6 +4,9 @@ import java.sql.Date;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
@@ -13,6 +16,7 @@ import android.widget.Toast;
 
 import com.zege.devtest.R;
 import com.zege.devtest.flatui.FlatUI;
+import com.zege.devtest.models.TransactionModel;
 
 /**
  * Global constants tht cut across the app
@@ -57,6 +61,27 @@ public class Constants {
 		} catch (Exception ex) {
 			return "xx";
 		}
+	}
+	
+	/**
+	 * Get json object from string passed from js function
+	 * @param stringFromJS
+	 * @return
+	 */
+	public static TransactionModel getModelFromString(String stringFromJS) {
+		TransactionModel model = new TransactionModel();
+		try {
+			JSONObject jsonObject = new JSONObject(stringFromJS);
+			model.setAmount(jsonObject.getString("amount"));
+			model.setParticulars(jsonObject.getString("particulars"));
+			model.setUnits(jsonObject.getString("units"));
+			model.setTran_color(jsonObject.getString("priority"));
+			if (jsonObject.getString("timeStamp") != null)
+				model.setCreated_date_time(jsonObject
+						.getString("timeStamp"));
+		} catch (JSONException e) {
+		}
+		return model;
 	}
 
 	private static String getMonth(String month) {

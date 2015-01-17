@@ -2,9 +2,6 @@ package com.zege.devtest;
 
 import java.util.ArrayList;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import android.annotation.SuppressLint;
 import android.app.ActionBar.LayoutParams;
 import android.app.AlertDialog;
@@ -68,12 +65,13 @@ public class MainActivity extends ActionBarActivity {
 		super.onCreate(savedInstanceState);
 		Constants.initializeFlatUi(this);
 		setContentView(R.layout.activity_main);
+
 		// getScreenSize();
+
+		transactionsArrayList = new ArrayList<TransactionModel>();
 
 		// initialize the list of transactions from the offline db
 		initializeWebView();
-
-		transactionsArrayList = new ArrayList<TransactionModel>();
 
 		if (savedInstanceState == null) {
 			getSupportFragmentManager().beginTransaction()
@@ -83,6 +81,10 @@ public class MainActivity extends ActionBarActivity {
 		pleaseWait = new ProgressDialog(this);
 		pleaseWait.setMessage("Please wait ...");
 		pleaseWait.show();
+	}
+
+	public ArrayList<TransactionModel> getTransactionsArrayList() {
+		return transactionsArrayList;
 	}
 
 	/**
@@ -109,13 +111,6 @@ public class MainActivity extends ActionBarActivity {
 		webView.getSettings().setJavaScriptEnabled(true);
 		// Step 4: Add our js interface for objects transfer
 		webView.addJavascriptInterface(new MainJsInterface(this), "MyAndroid");
-
-		// webView.setWebViewClient(new WebViewClient() {
-		// public void onPageFinished(WebView view, String url) {
-		// //webView.loadUrl("javascript: getAllTransactionItems	()");
-		// }
-		// });
-
 	}
 
 	// Menu stuff
@@ -181,10 +176,12 @@ public class MainActivity extends ActionBarActivity {
 					AlertDialog.Builder alert = new AlertDialog.Builder(
 							getActivity());
 					alert.setTitle("Filter Transactions By"); // Set Alert
-																// dialog
-																// title here
+																// dialog title
+																// here
+
 					LinearLayout layout = new LinearLayout(getActivity());
-					Spinner spinner = new Spinner(getActivity());
+
+					final Spinner spinner = new Spinner(getActivity());
 
 					spinner.setLayoutParams(new LinearLayout.LayoutParams(
 							LayoutParams.MATCH_PARENT,
@@ -211,7 +208,6 @@ public class MainActivity extends ActionBarActivity {
 					spinner.setAdapter(adapter);
 
 					spinner.setOnItemSelectedListener(new OnItemSelectedListener() {
-
 						@Override
 						public void onItemSelected(AdapterView<?> arg0,
 								View arg1, int position, long arg3) {
@@ -265,13 +261,40 @@ public class MainActivity extends ActionBarActivity {
 									// variable.
 									// here we convert the input to a string and
 									// do the necessary
+									String filterBy = spinner.getSelectedItem()
+											.toString();
+									String[] filters = getResources()
+											.getStringArray(
+													R.array.filter_fields_array);
 
-									Toast.makeText(getActivity(),
-											"Do the necessary",
-											Toast.LENGTH_SHORT).show();
+									// if its not the time period
+									if (!filterBy.equals(filters[2])) {
+										Toast.makeText(
+												getActivity(),
+												"Filter by "
+														+ filterBy
+														+ " and "
+														+ valuesSpinner
+																.getSelectedItem()
+																.toString(),
+												Toast.LENGTH_SHORT).show();
+									} else {
+										Toast.makeText(getActivity(),
+												"Not implemented",
+												Toast.LENGTH_SHORT).show();
+									}
+
 								} // End of onClick(DialogInterface dialog, int
 									// whichButton)
 							}); // End of alert.setPositiveButton
+					alert.setNegativeButton("CANCEL",
+							new DialogInterface.OnClickListener() {
+								public void onClick(DialogInterface dialog,
+										int whichButton) {
+									// Canceled.
+									dialog.cancel();
+								}
+							}); // End of alert.setNegativeButton
 
 					AlertDialog alertDialog = alert.create();
 					alertDialog.show();
@@ -293,7 +316,8 @@ public class MainActivity extends ActionBarActivity {
 		}
 
 		/**
-		 * Get the transactions loaded via js an array is passed then extracted
+		 * Get the transactions loaded via js an array is passed then parsed to
+		 * json
 		 * 
 		 * @param arr
 		 */
@@ -301,7 +325,7 @@ public class MainActivity extends ActionBarActivity {
 		public void loadAllTransactions(String[] arr) {
 			transactionsArrayList.clear();
 			for (int i = 0; i < arr.length; i++) {
-				TransactionModel model = getModelFromString(arr[i]);
+				TransactionModel model = Constants.getModelFromString(arr[i]);
 				if (!transactionsArrayList.contains(model)) {
 					transactionsArrayList.add(model);
 				}
@@ -351,25 +375,5 @@ public class MainActivity extends ActionBarActivity {
 			});
 
 		}
-
-		private TransactionModel getModelFromString(String stringFromJS) {
-			TransactionModel model = new TransactionModel();
-			try {
-				JSONObject jsonObject = new JSONObject(stringFromJS);
-				model.setAmount(jsonObject.getString("amount"));
-				model.setParticulars(jsonObject.getString("particulars"));
-				model.setUnits(jsonObject.getString("units"));
-				model.setTran_color(jsonObject.getString("priority"));
-				if (jsonObject.getString("timeStamp") != null)
-					model.setCreated_date_time(jsonObject
-							.getString("timeStamp"));
-			} catch (JSONException e) {
-			}
-			return model;
-		}
-	}
-
-	public ArrayList<TransactionModel> getTransactionsArrayList() {
-		return transactionsArrayList;
 	}
 }

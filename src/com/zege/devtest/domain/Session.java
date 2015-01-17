@@ -2,14 +2,13 @@ package com.zege.devtest.domain;
 
 import java.util.ArrayList;
 
-import android.app.Activity;
 import android.app.Application;
 import android.webkit.WebView;
 
 import com.zege.devtest.models.TransactionModel;
 
 /**
- * This is a global POJO that we attach data to which we want to use across the
+ * This is a global POJO that we attach data to, to use across the
  * application
  * 
  * @author Michael Otieno

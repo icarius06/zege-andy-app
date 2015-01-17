@@ -15,6 +15,7 @@
     <string name="delete_record_lbl">Delete Record</string>
     <string name="action_settings">Settings</string>
     <string name="amount_lbl">Amount</string>
+    <string name="amount_hint_lbl">Enter the transaction amount</string>
     <string name="units_lbl">Units</string>
     <string name="date_lbl">Date</string>
     <string name="submit_lbl">Submit</string>
