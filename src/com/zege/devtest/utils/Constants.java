@@ -3,6 +3,7 @@ package com.zege.devtest.utils;
 import java.sql.Date;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -16,6 +17,7 @@ import android.widget.Toast;
 
 import com.zege.devtest.R;
 import com.zege.devtest.flatui.FlatUI;
+import com.zege.devtest.flatui.views.FlatEditText;
 import com.zege.devtest.models.TransactionModel;
 
 /**
@@ -84,6 +86,33 @@ public class Constants {
 		return model;
 	}
 
+	/**
+	 * Check if the passed fields array list is fully entered
+	 * @param editFields
+	 * @param a
+	 * @return
+	 */
+	public static boolean areEmptyFieldsHandled(ArrayList<FlatEditText> editFields,Activity a) {
+		boolean all_fields_entered = true;
+		for (FlatEditText entry : editFields) {
+			if (entry.getText().toString().isEmpty()) {
+				all_fields_entered = false;
+				entry.getAttributes().setTheme(FlatUI.CANDY, a.getResources());
+				return all_fields_entered;
+			} else {
+				entry.getAttributes().setTheme(Constants.APP_THEME,
+						a.getResources());
+			}
+		}
+		return all_fields_entered;
+	}
+
+	
+	/**
+	 * 
+	 * @param month
+	 * @return
+	 */
 	private static String getMonth(String month) {
 		String[] months = { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul","Aug", "Sept", "Nov", "Dec" };
 		return months[Integer.parseInt(month) - 1];

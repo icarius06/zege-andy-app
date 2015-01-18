@@ -117,6 +117,12 @@
                     android:maxLines="1"
                     flatui:fl_cornerRadius="0dp"
                     flatui:fl_fieldStyle="fl_flat" />
+
+                <Spinner
+                    android:id="@+id/edit_priority_spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
             </LinearLayout>
         </LinearLayout>
 
@@ -245,9 +251,9 @@
                 android:id="@+id/button_editRecord"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
                 android:text="@string/edit_record_lbl"
                 flatui:fl_textAppearance="fl_light" />
         </LinearLayout>

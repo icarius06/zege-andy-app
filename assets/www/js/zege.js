@@ -19,6 +19,9 @@ var db_name = 'transactions_2';
 
 var options = {mechanisms: ['indexeddb']};
 
+var read_only = 1;
+var read_write = 0;
+
 /**
  * Create and initialize the database.
  * @type {ydn.db.Storage}
@@ -33,6 +36,31 @@ db.addEventListener('ready', function(e) {
     // console.log(db + 'ready');
   }
 });
+
+var updateTransaction = function(key){           
+
+  var units = MyAndroid3.getTextValuesFor('units');
+  var amount = MyAndroid3.getTextValuesFor('amount');
+  var particulars = MyAndroid3.getTextValuesFor('particulars');
+  var priority = MyAndroid3.getTextValuesFor('priority');
+  
+            var newRecords = {
+			    "units":units,
+			    "amount":amount,
+			    "timeStamp":key,
+			    "particulars":particulars,
+			    "priority":priority
+		    };
+		    
+			req = db.put({name: 'transaction', keyPath: 'timeStamp'}, newRecords);
+			req.done(function(key) {
+			  console.log(key);
+			});
+			req.fail(function(e) {
+			  throw e;
+			});
+			getAllTransactionItems();
+};
 
 var deleteTransaction = function (id) {
   db.remove('transaction', id).fail(function(e) {

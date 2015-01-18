@@ -122,11 +122,9 @@ public class AddTransactionActivity extends Activity {
 
 	public TransactionModel getModelFromInput() {
 		TransactionModel transactionModel = new TransactionModel();
-
 		transactionModel.setAmount(amountEditText.getText().toString());
 		transactionModel.setUnits(unitsEditText.getText().toString());
-		transactionModel.setParticulars(particularsEditText.getText()
-				.toString());
+		transactionModel.setParticulars(particularsEditText.getText().toString());
 
 		if (spinner.getSelectedItem().toString().equals(priorities[0])) {
 			transactionModel.setTran_color("Yellow");
@@ -147,21 +145,7 @@ public class AddTransactionActivity extends Activity {
 		return transactionModel;
 	}
 
-	private boolean areEmptyFieldsHandled() {
-		boolean all_fields_entered = true;
-		for (FlatEditText entry : editFields) {
-			if (entry.getText().toString().isEmpty()) {
-				all_fields_entered = false;
-				entry.getAttributes().setTheme(FlatUI.CANDY, getResources());
-				return all_fields_entered;
-			} else {
-				entry.getAttributes().setTheme(Constants.APP_THEME,
-						getResources());
-			}
-		}
-		return all_fields_entered;
-	}
-
+	
 	public void initializeButtons() {
 		FlatButton btnCancel = (FlatButton) findViewById(R.id.buttonCancel);
 		btnCancel.setOnClickListener(new OnClickListener() {
@@ -175,7 +159,7 @@ public class AddTransactionActivity extends Activity {
 		btnSubmit.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
-				if (areEmptyFieldsHandled()) {
+				if (Constants.areEmptyFieldsHandled(editFields,AddTransactionActivity.this)) {
 					webView.loadUrl("javascript:addTransaction()"); 
 					finish();
 				}

@@ -127,7 +127,6 @@
             android:paddingRight="10dip" >
 
             <com.zege.devtest.flatui.views.FlatTextView
-                android:id="@+id/title_checkbox_priority"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dip"
